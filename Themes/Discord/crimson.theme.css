@@ -1,0 +1,357 @@
+:root {
+    /* Base Colors (Dark) */
+    --background-main: #0e0c0d;
+    --background-editor: #16131a;
+    --background-elevated: #1e1a1c;
+    --background-hover: #2a2426;
+    --background-active: #322a2e;
+    --background-selected: #3a3034;
+
+    /* Text Colors (Dark) */
+    --text-primary: #e8e8e8;
+    --text-muted: #a0a0a0;
+    --text-gray: #6a6a6a;
+    --text-dim: #4a4a4a;
+
+    /* Primary Accents */
+    --accent-primary: #dc143c;
+    --accent-secondary: #c81e38;
+
+    /* Syntax Colors (Dark) */
+    --keyword: #ff4466;
+    --string: #50c878;
+    --number: #ff8866;
+    --function: #5b9bd5;
+    --type: #ffd700;
+    --comment: #6a6a6a;
+    --operator: #ff4466;
+    --punctuation: #b0b0b0;
+    --parameter: #ffaacc;
+    --property: #a8d5ff;
+    --enum: #22d3ee;
+    --constructor: #ff6688;
+    --label: #22d3ee;
+    --regex: #ff8866;
+    --preprocessor: #d946ef;
+    --special-punctuation: #ff6688;
+    --link: #5b9bd5;
+    --link-uri: #22d3ee;
+
+    /* Status Colors */
+    --status-error: #dc143c;
+    --status-warning: #ffd700;
+    --status-success: #50c878;
+    --status-info: #5b9bd5;
+
+    /* UI Colors */
+    --line-number: #524850;
+    --active-line-number: #dc143c;
+    --selection-bg: #dc143c40;
+    --search-match-bg: #dc143c40;
+    --background-main: #0e0c0d;
+    --background-editor: #16131a;
+    --background-elevated: #1e1a1c;
+    --background-hover: #2a2426;
+    --background-active: #322a2e;
+    --background-selected: #3a3034;
+
+    --text-primary: #e8e8e8;
+    --text-muted: #a0a0a0;
+    --text-gray: #6a6a6a;
+    --text-dim: #4a4a4a;
+
+    --accent-primary: #dc143c;
+    --accent-secondary: #c81e38;
+}
+
+.visual-refresh.theme-dark {
+    --background-main: #0e0c0d;
+    --background-editor: #16131a;
+    --background-elevated: #1e1a1c;
+    --background-hover: #2a2426;
+    --background-active: #322a2e;
+    --background-selected: #3a3034;
+
+    --text-primary: #e8e8e8;
+    --text-muted: #a0a0a0;
+    --text-gray: #6a6a6a;
+    --text-dim: #4a4a4a;
+
+    --accent-primary: #dc143c;
+    --accent-secondary: #c81e38;
+}
+
+.visual-refresh.theme-light {
+    --background-main: #fafafa;
+    --background-editor: #f5f5f5;
+    --background-elevated: #f0f0f0;
+    --background-hover: #e8e8e8;
+    --background-active: #e0e0e0;
+    --background-selected: #d8d8d8;
+
+    --text-primary: #1a1a1a;
+    --text-muted: #5a5a5a;
+    --text-gray: #8a8a8a;
+    --text-dim: #b0b0b0;
+
+    --accent-primary: #c81e38;
+    --accent-secondary: #ff4466;
+}
+
+* {
+    font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+        Cantarell, "Open Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-main);
+    color: var(--text-primary);
+    transition:
+        background-color 0.3s,
+        color 0.3s;
+}
+
+/* Backgrounds */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(14, 12, 13, 0.2);
+    z-index: -1;
+}
+
+.editor {
+    background-color: var(--background-editor);
+}
+
+.panel,
+.sidebar {
+    background-color: var(--background-main);
+    border-right: 1px solid var(--background-hover);
+}
+
+.panel.elevated {
+    background-color: var(--background-elevated);
+    border: 1px solid var(--background-hover);
+}
+
+/* Text */
+.text-primary {
+    color: var(--text-primary);
+}
+
+.text-muted {
+    color: var(--text-muted);
+}
+
+.text-gray {
+    color: var(--text-gray);
+}
+
+.text-dim {
+    color: var(--text-dim);
+}
+
+/* Accents */
+.accent-primary {
+    color: var(--accent-primary);
+}
+
+.accent-secondary {
+    color: var(--accent-secondary);
+}
+
+.button-primary {
+    background-color: var(--accent-primary);
+    border-color: var(--accent-primary);
+}
+
+.button-primary:hover {
+    background-color: shade(0.9, var(--accent-primary));
+    border-color: shade(0.9, var(--accent-primary));
+}
+
+.button-secondary {
+    background-color: var(--background-hover);
+    border-color: var(--accent-secondary);
+}
+
+.button-secondary:hover {
+    background-color: shade(0.1, var(--accent-secondary));
+    border-color: var(--accent-secondary);
+}
+
+/* Syntax Highlighting */
+.hljs {
+    background-color: var(--background-editor);
+    color: var(--text-primary);
+}
+
+.hljs-keyword {
+    color: var(--accent-primary);
+}
+
+.hljs-string {
+    color: #50c878;
+}
+
+.hljs-number {
+    color: #ff8866;
+}
+
+.hljs-function {
+    color: #5b9bd5;
+}
+
+/* Interface */
+.input-field {
+    background-color: var(--background-hover);
+    border-color: var(--background-hover);
+    color: var(--text-primary);
+}
+
+.input-field:focus {
+    background-color: var(--background-active);
+    border-color: var(--accent-primary);
+}
+
+.focus-visible:focus {
+    outline: 1px solid var(--accent-primary);
+}
+
+/* Navigation */
+.nav-bar {
+    background-color: var(--background-main);
+    border-bottom: 1px solid var(--background-hover);
+}
+
+.nav-bar button {
+    background-color: transparent;
+    border: none;
+    color: var(--text-primary);
+    font-weight: bold;
+}
+
+.nav-bar button:hover {
+    color: var(--accent-primary);
+    text-decoration: underline;
+}
+
+/* Chat Messages */
+.message {
+    background-color: transparent;
+    border-left: 3px solid;
+    border-radius: 0;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.message-primary {
+    border-left-color: var(--accent-primary);
+}
+
+.message-secondary {
+    border-left-color: var(--accent-secondary);
+}
+
+.message-header {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.message-body {
+    line-height: 1.5;
+}
+
+/* Input Area */
+.input-area {
+    background-color: var(--background-editor);
+    border-top: 1px solid var(--background-hover);
+    margin-top: 1em;
+    padding: 0.5em;
+}
+
+.input-area input {
+    background-color: var(--background-editor);
+    border: 1px solid var(--background-hover);
+    color: var(--text-primary);
+    font-size: 1em;
+    width: 100%;
+}
+
+/* Guilds */
+.guild-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.guild-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5em 1em;
+    border-bottom: 1px solid var(--background-hover);
+}
+
+.guild-icon {
+    width: 32px;
+    height: 32px;
+    background-color: var(--background-hover);
+    border-radius: 4px;
+    margin-right: 0.5em;
+}
+
+.guild-icon.has-boost {
+    background-color: var(--accent-primary);
+}
+
+.guild-icon.has-premium {
+    background-color: var(--accent-secondary);
+}
+
+/* Animations */
+@keyframes pulse {
+    0% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes highlight {
+    0% {
+        background-color: var(--accent-primary);
+    }
+    50% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: var(--accent-primary);
+    }
+}
+
+.highlight {
+    animation: highlight 1s;
+}
+
+/* Selectors */
+[contenteditable="true"] {
+    outline: 1px solid var(--accent-primary);
+    background-color: transparent;
+}
+
+[contenteditable="true"]:focus {
+    outline: 2px solid var(--accent-primary);
+}
