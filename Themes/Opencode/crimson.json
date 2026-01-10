@@ -1,0 +1,243 @@
+{
+  "$schema": "https://opencode.ai/theme.json",
+  "defs": {
+    "obsidian": "#0e0c0d",
+    "deepRuby": "#16131a",
+    "rubySlate": "#1e1a1c",
+    "warmGraphite": "#2a2426",
+    "rubySteel": "#322a2e",
+    "rubyIron": "#3a3034",
+    "snow": "#fafafa",
+    "ivory": "#f5f5f5",
+    "pearl": "#f0f0f0",
+    "silk": "#e8e8e8",
+    "cloud": "#e0e0e0",
+    "mist": "#d8d8d8",
+    "crimson": "#dc143c",
+    "ruby": "#c81e38",
+    "scarlet": "#ff4466",
+    "rose": "#ff6688",
+    "coral": "#ff8866",
+    "pink": "#ffaacc",
+    "emerald": "#50c878",
+    "jade": "#2d9d5f",
+    "sky": "#5b9bd5",
+    "azure": "#2a6fad",
+    "cyan": "#22d3ee",
+    "teal": "#0d9fb8",
+    "gold": "#ffd700",
+    "amber": "#c89700",
+    "violet": "#d946ef",
+    "purple": "#b028d0",
+    "white": "#e8e8e8",
+    "silver": "#a0a0a0",
+    "gray": "#6a6a6a",
+    "dim": "#4a4a4a",
+    "black": "#1a1a1a",
+    "charcoal": "#5a5a5a",
+    "slate": "#8a8a8a",
+    "lightGray": "#b0b0b0"
+  },
+  "theme": {
+    "primary": {
+      "dark": "crimson",
+      "light": "ruby"
+    },
+    "secondary": {
+      "dark": "scarlet",
+      "light": "ruby"
+    },
+    "accent": {
+      "dark": "rose",
+      "light": "ruby"
+    },
+    "error": {
+      "dark": "crimson",
+      "light": "ruby"
+    },
+    "warning": {
+      "dark": "gold",
+      "light": "amber"
+    },
+    "success": {
+      "dark": "emerald",
+      "light": "jade"
+    },
+    "info": {
+      "dark": "sky",
+      "light": "azure"
+    },
+    "text": {
+      "dark": "white",
+      "light": "black"
+    },
+    "textMuted": {
+      "dark": "silver",
+      "light": "charcoal"
+    },
+    "background": {
+      "dark": "obsidian",
+      "light": "snow"
+    },
+    "backgroundPanel": {
+      "dark": "deepRuby",
+      "light": "ivory"
+    },
+    "backgroundElement": {
+      "dark": "rubySlate",
+      "light": "pearl"
+    },
+    "border": {
+      "dark": "warmGraphite",
+      "light": "silk"
+    },
+    "borderActive": {
+      "dark": "crimson",
+      "light": "ruby"
+    },
+    "borderSubtle": {
+      "dark": "rubySteel",
+      "light": "cloud"
+    },
+    "diffAdded": {
+      "dark": "emerald",
+      "light": "jade"
+    },
+    "diffRemoved": {
+      "dark": "crimson",
+      "light": "ruby"
+    },
+    "diffContext": {
+      "dark": "gray",
+      "light": "slate"
+    },
+    "diffHunkHeader": {
+      "dark": "sky",
+      "light": "azure"
+    },
+    "diffHighlightAdded": {
+      "dark": "#6fdc94",
+      "light": "#3cb371"
+    },
+    "diffHighlightRemoved": {
+      "dark": "scarlet",
+      "light": "#e02850"
+    },
+    "diffAddedBg": {
+      "dark": "#1a2f20",
+      "light": "#e8f5ec"
+    },
+    "diffRemovedBg": {
+      "dark": "#2f1a1c",
+      "light": "#fce8ea"
+    },
+    "diffContextBg": {
+      "dark": "deepRuby",
+      "light": "ivory"
+    },
+    "diffLineNumber": {
+      "dark": "#524850",
+      "light": "silver"
+    },
+    "diffAddedLineNumberBg": {
+      "dark": "#1a3020",
+      "light": "#d4f0dc"
+    },
+    "diffRemovedLineNumberBg": {
+      "dark": "#301a1c",
+      "light": "#f8d4d8"
+    },
+    "markdownText": {
+      "dark": "white",
+      "light": "black"
+    },
+    "markdownHeading": {
+      "dark": "rose",
+      "light": "ruby"
+    },
+    "markdownLink": {
+      "dark": "sky",
+      "light": "azure"
+    },
+    "markdownLinkText": {
+      "dark": "cyan",
+      "light": "teal"
+    },
+    "markdownCode": {
+      "dark": "coral",
+      "light": "#d97000"
+    },
+    "markdownBlockQuote": {
+      "dark": "silver",
+      "light": "charcoal"
+    },
+    "markdownEmph": {
+      "dark": "pink",
+      "light": "#d46088"
+    },
+    "markdownStrong": {
+      "dark": "scarlet",
+      "light": "ruby"
+    },
+    "markdownHorizontalRule": {
+      "dark": "warmGraphite",
+      "light": "silk"
+    },
+    "markdownListItem": {
+      "dark": "scarlet",
+      "light": "ruby"
+    },
+    "markdownListEnumeration": {
+      "dark": "coral",
+      "light": "#d97000"
+    },
+    "markdownImage": {
+      "dark": "cyan",
+      "light": "teal"
+    },
+    "markdownImageText": {
+      "dark": "gold",
+      "light": "amber"
+    },
+    "markdownCodeBlock": {
+      "dark": "rubySlate",
+      "light": "pearl"
+    },
+    "syntaxComment": {
+      "dark": "gray",
+      "light": "slate"
+    },
+    "syntaxKeyword": {
+      "dark": "scarlet",
+      "light": "ruby"
+    },
+    "syntaxFunction": {
+      "dark": "sky",
+      "light": "azure"
+    },
+    "syntaxVariable": {
+      "dark": "white",
+      "light": "black"
+    },
+    "syntaxString": {
+      "dark": "emerald",
+      "light": "jade"
+    },
+    "syntaxNumber": {
+      "dark": "coral",
+      "light": "#d97000"
+    },
+    "syntaxType": {
+      "dark": "gold",
+      "light": "amber"
+    },
+    "syntaxOperator": {
+      "dark": "scarlet",
+      "light": "ruby"
+    },
+    "syntaxPunctuation": {
+      "dark": "lightGray",
+      "light": "dim"
+    }
+  }
+}

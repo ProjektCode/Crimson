@@ -1,7 +1,7 @@
 <div align="center">
   <h1>💎 Crimson Style Guide</h1>
   <p>A comprehensive guide on how to properly <strong>use</strong> the Crimson palette</p>
-  <p><em>A modern, sleek theme inspired by the vibrant crimson color</em></p>
+  <p><em>A modern, sleek theme inspired by the vibrant crimson color and Catppuccin</em></p>
 </div>
 
 ---
@@ -22,69 +22,69 @@ The theme comes in two variants:
 
 | Name | Hex | Preview | Usage |
 |------|-----|---------|-------|
-| **Obsidian** | `#0e0c0d` | ![#0e0c0d](https://via.placeholder.com/16/0e0c0d/0e0c0d) | Main background, panels, status bar |
-| **Deep Ruby** | `#16131a` | ![#16131a](https://via.placeholder.com/16/16131a/16131a) | Editor background, surfaces |
-| **Ruby Slate** | `#1e1a1c` | ![#1e1a1c](https://via.placeholder.com/16/1e1a1c/1e1a1c) | Elevated surfaces, active tabs |
-| **Warm Graphite** | `#2a2426` | ![#2a2426](https://via.placeholder.com/16/2a2426/2a2426) | Hover states, borders |
-| **Ruby Steel** | `#322a2e` | ![#322a2e](https://via.placeholder.com/16/322a2e/322a2e) | Active elements |
-| **Ruby Iron** | `#3a3034` | ![#3a3034](https://via.placeholder.com/16/3a3034/3a3034) | Selected elements |
+| **Obsidian** | `#0e0c0d` | ![#0e0c0d](./color_swatches/0e0c0d.bmp) | Main background, panels, status bar |
+| **Deep Ruby** | `#16131a` | ![#16131a](./color_swatches/16131a.bmp) | Editor background, surfaces |
+| **Ruby Slate** | `#1e1a1c` | ![#1e1a1c](./color_swatches/1e1a1c.bmp) | Elevated surfaces, active tabs |
+| **Warm Graphite** | `#2a2426` | ![#2a2426](./color_swatches/2a2426.bmp) | Hover states, borders |
+| **Ruby Steel** | `#322a2e` | ![#322a2e](./color_swatches/322a2e.bmp) | Active elements |
+| **Ruby Iron** | `#3a3034` | ![#3a3034](./color_swatches/3a3034.bmp) | Selected elements |
 
 ### Base Colors (Light)
 
 | Name | Hex | Preview | Usage |
 |------|-----|---------|-------|
-| **Snow** | `#fafafa` | ![#fafafa](https://via.placeholder.com/16/fafafa/fafafa) | Main background, panels |
-| **Ivory** | `#f5f5f5` | ![#f5f5f5](https://via.placeholder.com/16/f5f5f5/f5f5f5) | Editor background, surfaces |
-| **Pearl** | `#f0f0f0` | ![#f0f0f0](https://via.placeholder.com/16/f0f0f0/f0f0f0) | Elevated surfaces, active tabs |
-| **Silk** | `#e8e8e8` | ![#e8e8e8](https://via.placeholder.com/16/e8e8e8/e8e8e8) | Hover states, borders |
-| **Cloud** | `#e0e0e0` | ![#e0e0e0](https://via.placeholder.com/16/e0e0e0/e0e0e0) | Active elements |
-| **Mist** | `#d8d8d8` | ![#d8d8d8](https://via.placeholder.com/16/d8d8d8/d8d8d8) | Selected elements |
+| **Snow** | `#fafafa` | ![#fafafa](./color_swatches/fafafa.bmp) | Main background, panels |
+| **Ivory** | `#f5f5f5` | ![#f5f5f5](./color_swatches/f5f5f5.bmp) | Editor background, surfaces |
+| **Pearl** | `#f0f0f0` | ![#f0f0f0](./color_swatches/f0f0f0.bmp) | Elevated surfaces, active tabs |
+| **Silk** | `#e8e8e8` | ![#e8e8e8](./color_swatches/e8e8e8.bmp) | Hover states, borders |
+| **Cloud** | `#e0e0e0` | ![#e0e0e0](./color_swatches/e0e0e0.bmp) | Active elements |
+| **Mist** | `#d8d8d8` | ![#d8d8d8](./color_swatches/d8d8d8.bmp) | Selected elements |
 
 ### Primary Colors
 
 | Name | Hex | Preview | Usage |
 |------|-----|---------|-------|
-| **Crimson** | `#dc143c` | ![#dc143c](https://via.placeholder.com/16/dc143c/dc143c) | Primary accent (dark), keywords, errors |
-| **Ruby** | `#c81e38` | ![#c81e38](https://via.placeholder.com/16/c81e38/c81e38) | Primary accent (light), keywords, errors |
-| **Scarlet** | `#ff4466` | ![#ff4466](https://via.placeholder.com/16/ff4466/ff4466) | Bright accent, highlights |
-| **Rose** | `#ff6688` | ![#ff6688](https://via.placeholder.com/16/ff6688/ff6688) | Links, constructors |
-| **Coral** | `#ff8866` | ![#ff8866](https://via.placeholder.com/16/ff8866/ff8866) | Numbers, constants |
-| **Pink** | `#ffaacc` | ![#ffaacc](https://via.placeholder.com/16/ffaacc/ffaacc) | Parameters (dark) |
+| **Crimson** | `#dc143c` | ![#dc143c](./color_swatches/dc143c.bmp) | Primary accent (dark), keywords, errors |
+| **Ruby** | `#c81e38` | ![#c81e38](./color_swatches/c81e38.bmp) | Primary accent (light), keywords, errors |
+| **Scarlet** | `#ff4466` | ![#ff4466](./color_swatches/ff4466.bmp) | Bright accent, highlights |
+| **Rose** | `#ff6688` | ![#ff6688](./color_swatches/ff6688.bmp) | Links, constructors |
+| **Coral** | `#ff8866` | ![#ff8866](./color_swatches/ff8866.bmp) | Numbers, constants |
+| **Pink** | `#ffaacc` | ![#ffaacc](./color_swatches/ffaacc.bmp) | Parameters (dark) |
 
 ### Secondary Colors
 
 | Name | Hex | Preview | Usage |
 |------|-----|---------|-------|
-| **Emerald** | `#50c878` | ![#50c878](https://via.placeholder.com/16/50c878/50c878) | Strings (dark), success, green |
-| **Jade** | `#2d9d5f` | ![#2d9d5f](https://via.placeholder.com/16/2d9d5f/2d9d5f) | Strings (light), success |
-| **Sky** | `#5b9bd5` | ![#5b9bd5](https://via.placeholder.com/16/5b9bd5/5b9bd5) | Functions (dark), info |
-| **Azure** | `#2a6fad` | ![#2a6fad](https://via.placeholder.com/16/2a6fad/2a6fad) | Functions (light), info |
-| **Cyan** | `#22d3ee` | ![#22d3ee](https://via.placeholder.com/16/22d3ee/22d3ee) | Enums, labels, escape sequences (dark) |
-| **Teal** | `#0d9fb8` | ![#0d9fb8](https://via.placeholder.com/16/0d9fb8/0d9fb8) | Enums, labels, escape sequences (light) |
-| **Gold** | `#ffd700` | ![#ffd700](https://via.placeholder.com/16/ffd700/ffd700) | Types, attributes, warnings (dark) |
-| **Amber** | `#c89700` | ![#c89700](https://via.placeholder.com/16/c89700/c89700) | Types, attributes, warnings (light) |
-| **Violet** | `#d946ef` | ![#d946ef](https://via.placeholder.com/16/d946ef/d946ef) | Preprocessor (dark) |
-| **Purple** | `#b028d0` | ![#b028d0](https://via.placeholder.com/16/b028d0/b028d0) | Preprocessor (light) |
-| **Orange** | `#ff8800` | ![#ff8800](https://via.placeholder.com/16/ff8800/ff8800) | Player 8 (dark) |
-| **Tangerine** | `#d97000` | ![#d97000](https://via.placeholder.com/16/d97000/d97000) | Numbers, constants (light) |
+| **Emerald** | `#50c878` | ![#50c878](./color_swatches/50c878.bmp) | Strings (dark), success, green |
+| **Jade** | `#2d9d5f` | ![#2d9d5f](./color_swatches/2d9d5f.bmp) | Strings (light), success |
+| **Sky** | `#5b9bd5` | ![#5b9bd5](./color_swatches/5b9bd5.bmp) | Functions (dark), info |
+| **Azure** | `#2a6fad` | ![#2a6fad](./color_swatches/2a6fad.bmp) | Functions (light), info |
+| **Cyan** | `#22d3ee` | ![#22d3ee](./color_swatches/22d3ee.bmp) | Enums, labels, escape sequences (dark) |
+| **Teal** | `#0d9fb8` | ![#0d9fb8](./color_swatches/0d9fb8.bmp) | Enums, labels, escape sequences (light) |
+| **Gold** | `#ffd700` | ![#ffd700](./color_swatches/ffd700.bmp) | Types, attributes, warnings (dark) |
+| **Amber** | `#c89700` | ![#c89700](./color_swatches/c89700.bmp) | Types, attributes, warnings (light) |
+| **Violet** | `#d946ef` | ![#d946ef](./color_swatches/d946ef.bmp) | Preprocessor (dark) |
+| **Purple** | `#b028d0` | ![#b028d0](./color_swatches/b028d0.bmp) | Preprocessor (light) |
+| **Orange** | `#ff8800` | ![#ff8800](./color_swatches/ff8800.bmp) | Player 8 (dark) |
+| **Tangerine** | `#d97000` | ![#d97000](./color_swatches/d97000.bmp) | Numbers, constants (light) |
 
 ### Text Colors (Dark)
 
 | Name | Hex | Preview | Usage |
 |------|-----|---------|-------|
-| **White** | `#e8e8e8` | ![#e8e8e8](https://via.placeholder.com/16/e8e8e8/e8e8e8) | Primary text, foreground |
-| **Silver** | `#a0a0a0` | ![#a0a0a0](https://via.placeholder.com/16/a0a0a0/a0a0a0) | Muted text |
-| **Gray** | `#6a6a6a` | ![#6a6a6a](https://via.placeholder.com/16/6a6a6a/6a6a6a) | Comments, placeholder text |
-| **Dim** | `#4a4a4a` | ![#4a4a4a](https://via.placeholder.com/16/4a4a4a/4a4a4a) | Disabled text |
+| **White** | `#e8e8e8` | ![#e8e8e8](./color_swatches/e8e8e8.bmp) | Primary text, foreground |
+| **Silver** | `#a0a0a0` | ![#a0a0a0](./color_swatches/a0a0a0.bmp) | Muted text |
+| **Gray** | `#6a6a6a` | ![#6a6a6a](./color_swatches/6a6a6a.bmp) | Comments, placeholder text |
+| **Dim** | `#4a4a4a` | ![#4a4a4a](./color_swatches/4a4a4a.bmp) | Disabled text |
 
 ### Text Colors (Light)
 
 | Name | Hex | Preview | Usage |
 |------|-----|---------|-------|
-| **Black** | `#1a1a1a` | ![#1a1a1a](https://via.placeholder.com/16/1a1a1a/1a1a1a) | Primary text, foreground |
-| **Charcoal** | `#5a5a5a` | ![#5a5a5a](https://via.placeholder.com/16/5a5a5a/5a5a5a) | Muted text |
-| **Slate** | `#8a8a8a` | ![#8a8a8a](https://via.placeholder.com/16/8a8a8a/8a8a8a) | Comments, placeholder text |
-| **Light Gray** | `#b0b0b0` | ![#b0b0b0](https://via.placeholder.com/16/b0b0b0/b0b0b0) | Disabled text |
+| **Black** | `#1a1a1a` | ![#1a1a1a](./color_swatches/1a1a1a.bmp) | Primary text, foreground |
+| **Charcoal** | `#5a5a5a` | ![#5a5a5a](./color_swatches/5a5a5a.bmp) | Muted text |
+| **Slate** | `#8a8a8a` | ![#8a8a8a](./color_swatches/8a8a8a.bmp) | Comments, placeholder text |
+| **Light Gray** | `#b0b0b0` | ![#b0b0b0](./color_swatches/b0b0b0.bmp) | Disabled text |
 
 ---
 
