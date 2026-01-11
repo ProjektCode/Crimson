@@ -1,0 +1,413 @@
+/* ========================================
+   Crimson Theme for Spicetify
+   Based on the Crimson Style Guide
+   
+   Original CSS based on SharkBlue theme by MrBiscuit921
+   https://github.com/MrBiscuit921/spicetify-themes/tree/master/SharkBlue
+   ======================================== */
+
+/* CSS Variables */
+:root {
+  --border-radius-1: 8px;
+  --border-radius-2: 6px;
+  --border-radius-3: 4px;
+  /* Now Playing Bar */
+  --margin-bottom-now-playing-bar: 0.5rem;
+  --now-playing-bar-height: 5.625rem;
+  --padding-now-playing-bar: 0.25rem;
+  --border-radius-now-playing-bar: 0.5rem;
+  /* Blur effect */
+  --blur-radius: 12px;
+}
+
+/* ========================================
+   GLOBAL STYLES
+   ======================================== */
+
+/* Round corners on major containers */
+.Root__now-playing-bar,
+.Root__now-playing-bar footer,
+.Root__right-sidebar,
+.UrfDp0_mKGL9hkfh9g_R {
+  border-radius: var(--border-radius-1) !important;
+}
+
+/* Typography - Page titles */
+h1 {
+  font-weight: 700 !important;
+}
+
+/* ========================================
+   NOW PLAYING WIDGET
+   ======================================== */
+
+/* Song name in player */
+.main-nowPlayingWidget-nowPlaying .main-trackInfo-name {
+  overflow: unset;
+  font-size: 20px !important;
+  font-weight: 600;
+}
+
+/* Artist name in player */
+.main-nowPlayingWidget-nowPlaying .main-trackInfo-artists {
+  overflow: unset;
+  font-size: 15px;
+}
+
+.main-type-finale {
+  line-height: 17px;
+}
+
+/* ========================================
+   PLAYBACK CONTROLS
+   ======================================== */
+
+/* Icons scaling */
+.main-trackList-rowPlayPauseIcon {
+  transform: scale(1.3);
+}
+
+.x-downloadButton-button svg {
+  height: 32px;
+  width: 32px;
+}
+
+/* Progress and remaining time */
+.main-playbackBarRemainingTime-container,
+.playback-bar__progress-time-elapsed,
+.playback-bar__progress-time {
+  font-size: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* Player play button */
+.main-playPauseButton-button {
+  background-color: unset;
+  color: var(--spice-subtext);
+  transition: color 0.2s ease, transform 0.1s ease;
+}
+
+.main-playPauseButton-button:hover {
+  color: var(--spice-button);
+  transform: scale(1.05);
+}
+
+.main-playPauseButton-button svg {
+  height: 28px;
+  width: 28px;
+}
+
+/* Progress bar */
+.progress-bar {
+  --fg-color: var(--spice-button);
+}
+
+.progress-bar__bg,
+.progress-bar__fg,
+.progress-bar__fg_wrapper {
+  height: 5px;
+  border-radius: 3px;
+}
+
+.progress-bar-wrapper {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* Extra controls */
+.control-button::before {
+  font-size: 20px;
+}
+
+.ExtraControls svg {
+  height: 20px;
+  width: 20px;
+}
+
+/* ========================================
+   HEADER & BACKGROUNDS
+   ======================================== */
+
+/* Remove gradients for cleaner look */
+.main-entityHeader-backgroundColor,
+.main-actionBarBackground-background {
+  background-color: unset !important;
+  background-image: none;
+}
+
+/* Cover shadow with theme color */
+.main-entityHeader-shadow {
+  -webkit-box-shadow: 0 4px 20px rgba(var(--spice-rgb-shadow), 0.5);
+  box-shadow: 0 4px 20px rgba(var(--spice-rgb-shadow), 0.5);
+}
+
+/* Top bar with subtle background */
+.main-topBar-background {
+  background-color: rgba(var(--spice-rgb-main), 0.9) !important;
+  backdrop-filter: blur(var(--blur-radius));
+}
+
+/* Playing icon */
+.main-trackList-playingIcon {
+  filter: none;
+}
+
+/* Playlist action bar background */
+.playlist-playlist-actionBarBackground-background {
+  visibility: hidden;
+}
+
+/* ========================================
+   SIDEBAR & NAVIGATION
+   ======================================== */
+
+/* Sidebar playlists divider */
+.main-rootlist-rootlistDividerGradient {
+  background: unset;
+}
+
+.main-rootlist-rootlistDivider {
+  background-color: var(--spice-button);
+}
+
+/* ========================================
+   SEARCH & INPUTS
+   ======================================== */
+
+/* Search box */
+.x-searchInput-searchInputInput {
+  font-size: 18px;
+}
+
+/* Text boxes in settings */
+.main-dropDown-dropDown {
+  background-color: var(--spice-button-disabled);
+  border-radius: var(--border-radius-3);
+}
+
+/* ========================================
+   TYPOGRAPHY
+   ======================================== */
+
+/* Artist names */
+.main-type-mesto {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* Song names */
+.main-type-ballad {
+  font-size: 18px;
+}
+
+/* Card descriptions */
+.main-cardSubHeader-root {
+  overflow: hidden !important;
+}
+
+/* Friends names */
+.main-buddyFeed-username a {
+  color: var(--spice-text) !important;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+/* Friends songs and artists */
+.main-buddyFeed-artistAndTrackName a,
+.main-buddyFeed-playbackContextLink span {
+  font-size: 13px;
+}
+
+/* Ellipsis text */
+.ellipsis-one-line.main-type-mesto {
+  font-size: 14px;
+}
+
+/* ========================================
+   SCROLLBARS
+   ======================================== */
+
+.os-scrollbar-handle {
+  background: var(--spice-button) !important;
+  border-radius: var(--border-radius-1);
+}
+
+.os-theme-spotify.os-host-transition>.os-scrollbar-vertical>.os-scrollbar-track>.os-scrollbar-handle {
+  border-radius: var(--border-radius-1);
+  width: 6px;
+  background-color: var(--spice-button);
+  opacity: 0.7;
+}
+
+.os-theme-spotify.os-host-transition>.os-scrollbar-vertical>.os-scrollbar-track {
+  width: 6px;
+}
+
+/* ========================================
+   TRACK LIST
+   ======================================== */
+
+/* Wider index column for multi-digit numbers */
+.main-trackList-trackList.main-trackList-indexable .main-trackList-trackListRowGrid {
+  grid-template-columns: [index] 48px [first] 6fr [var1] 4fr [var2] 3fr [last] minmax(120px,
+      1fr) !important;
+}
+
+/* Playlist like button */
+.main-actionBar-ActionBarRow .main-addButton-button .Svg-ulyrgf-0 {
+  height: unset;
+  width: unset;
+}
+
+/* Order button */
+.x-sortBox-sortDropdown {
+  margin-top: 3px;
+}
+
+/* ========================================
+   BUTTONS & INTERACTIVE ELEMENTS
+   ======================================== */
+
+/* Facebook button (remove background) */
+.x-settings-facebookButton {
+  background-color: unset !important;
+}
+
+/* Playlist play button color */
+.encore-dark-theme .encore-bright-accent-set,
+.encore-dark-theme .encore-bright-accent-set:hover,
+.encore-light-theme .encore-bright-accent-set,
+.encore-light-theme .encore-bright-accent-set:hover {
+  --background-base: var(--spice-button-active);
+  --background-highlight: var(--spice-button);
+  --background-press: var(--spice-button);
+}
+
+/* ========================================
+   PLAYER BAR (BOTTOM)
+   ======================================== */
+
+.main-nowPlayingBar-container {
+  justify-content: center;
+  height: var(--now-playing-bar-height);
+  width: 100%;
+  border-radius: var(--border-radius-now-playing-bar);
+  padding: var(--padding-now-playing-bar);
+  bottom: var(--margin-bottom-now-playing-bar);
+  background-color: rgba(var(--spice-rgb-main), 0.95);
+  backdrop-filter: blur(var(--blur-radius)) saturate(1.2);
+  border-top: 1px solid rgba(var(--spice-rgb-button), 0.2);
+}
+
+.main-nowPlayingBar-container .GlueDropTarget,
+.main-coverSlotCollapsed-container {
+  max-height: 56px;
+  max-width: 56px;
+}
+
+/* Cover height */
+.main-coverSlotExpanded-container {
+  height: calc(var(--nav-bar-width) + 8px);
+}
+
+/* ========================================
+   VOLUME BAR
+   ======================================== */
+
+.volume-bar .progress-bar {
+  margin: 0 0.4rem;
+}
+
+.volume-bar .playback-progressbar {
+  width: 70%;
+}
+
+.volume-bar {
+  flex: 0 150px;
+}
+
+/* ========================================
+   IMAGES & CARDS
+   ======================================== */
+
+/* Expanded Cover Art Image */
+.main-navBar-navBar> :nth-child(3) {
+  margin: 0 0 0 1px;
+  border-radius: var(--border-radius-2);
+}
+
+/* Collapsed Cover Art Image */
+.cover-art-image,
+.artist-artistOverview-sideBlock>div>section>div:nth-child(3)>section:nth-child(2)>div>img,
+.view-homeShortcutsGrid-image {
+  border-radius: var(--border-radius-3);
+}
+
+/* Playlist Header, Cards, etc */
+.main-entityHeader-shadow,
+.x-categoryCard-image,
+.x-entityImage-circle,
+.main-cardImage-image,
+.main-cardImage-imageWrapper,
+.main-entityHeader-imagePlaceholder>div,
+.artist-artistOverview-sideBlock>div>section,
+.ffFwfKcPDbmAPLXzxzKq {
+  border-radius: var(--border-radius-2);
+}
+
+/* Circled Artist + Profile Cards (force) */
+.main-cardImage-circular,
+.main-entityHeader-imagePlaceholder,
+.main-entityHeader-circle {
+  border-radius: 50% !important;
+}
+
+/* Track List Image */
+.main-trackList-rowImage {
+  border-radius: var(--border-radius-3);
+}
+
+/* ========================================
+   HOME PAGE
+   ======================================== */
+
+/* Home gradient with accent color */
+.main-home-homeHeader {
+  background: linear-gradient(180deg,
+      rgba(var(--spice-rgb-button), 0.4) 0%,
+      transparent 100%) !important;
+}
+
+/* Playlist header container */
+.main-entityHeader-container.main-entityHeader-nonWrapped {
+  min-height: 325px;
+  height: 15vh;
+}
+
+/* Ad title */
+.desktoproutes-homepage-takeover-ad-hptoNativeOriginal-header {
+  font-weight: 700 !important;
+}
+
+/* ========================================
+   HOVER EFFECTS & TRANSITIONS
+   ======================================== */
+
+/* Smooth transitions for interactive elements */
+.main-card-card,
+.main-trackList-trackListRow,
+button,
+a {
+  transition: background-color 0.15s ease, transform 0.1s ease, opacity 0.15s ease;
+}
+
+/* Card hover effect */
+.main-card-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Track row hover */
+.main-trackList-trackListRow:hover {
+  background-color: rgba(var(--spice-rgb-button), 0.1) !important;
+}
