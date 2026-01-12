@@ -1,357 +1,458 @@
-:root {
-    /* Base Colors (Dark) */
-    --background-main: #0e0c0d;
-    --background-editor: #16131a;
-    --background-elevated: #1e1a1c;
-    --background-hover: #2a2426;
-    --background-active: #322a2e;
-    --background-selected: #3a3034;
+/**
+ * @name Crimson
+ * @version 1.0.0
+ * @author ProjektCode
+ * @description A modern theme with deep obsidian backgrounds and vibrant crimson accents
+ * @source https://github.com/ProjektCode/crimson
+ * 
+ * Structure inspired by Catppuccin Discord theme
+ * @see https://github.com/catppuccin/discord
+ */
 
-    /* Text Colors (Dark) */
-    --text-primary: #e8e8e8;
+/* ===== Crimson Theme for Discord ===== */
+/* CSS structure based on Catppuccin (https://github.com/catppuccin/discord) */
+/* Colors from Crimson STYLE_GUIDE.md */
+
+/* Main dark theme - targets both standard and visual refresh */
+.theme-dark,
+.visual-refresh.theme-dark,
+.visual-refresh .theme-dark {
+    /* Background colors - Obsidian/Midnight palette */
+    --background-primary: #16131a;
+    --background-secondary: #0e0c0d;
+    --background-secondary-alt: #1e1a1c;
+    --background-tertiary: #0e0c0d;
+    --background-accent: #dc143c;
+    --background-floating: #1e1a1c;
+    --background-modifier-hover: #2a2426;
+    --background-modifier-active: #322a2e;
+    --background-modifier-selected: #3a3034;
+    --background-modifier-accent: rgba(220, 20, 60, 0.2);
+
+    /* Text colors */
+    --text-normal: #e8e8e8;
     --text-muted: #a0a0a0;
-    --text-gray: #6a6a6a;
-    --text-dim: #4a4a4a;
+    --text-link: #5b9bd5;
+    --text-positive: #50c878;
+    --text-warning: #ffd700;
+    --text-danger: #dc143c;
+    --text-brand: #dc143c;
 
-    /* Primary Accents */
-    --accent-primary: #dc143c;
-    --accent-secondary: #c81e38;
+    /* Header/Channels */
+    --header-primary: #e8e8e8;
+    --header-secondary: #a0a0a0;
+    --channels-default: #a0a0a0;
+    --channel-icon: #a0a0a0;
 
-    /* Syntax Colors (Dark) */
-    --keyword: #ff4466;
-    --string: #50c878;
-    --number: #ff8866;
-    --function: #5b9bd5;
-    --type: #ffd700;
-    --comment: #6a6a6a;
-    --operator: #ff4466;
-    --punctuation: #b0b0b0;
-    --parameter: #ffaacc;
-    --property: #a8d5ff;
-    --enum: #22d3ee;
-    --constructor: #ff6688;
-    --label: #22d3ee;
-    --regex: #ff8866;
-    --preprocessor: #d946ef;
-    --special-punctuation: #ff6688;
-    --link: #5b9bd5;
-    --link-uri: #22d3ee;
+    /* Interactive elements */
+    --interactive-normal: #a0a0a0;
+    --interactive-hover: #e8e8e8;
+    --interactive-active: #e8e8e8;
+    --interactive-muted: #6a6a6a;
 
-    /* Status Colors */
-    --status-error: #dc143c;
+    /* Brand colors (crimson accent) */
+    --brand-experiment: #dc143c;
+    --brand-experiment-560: #dc143c;
+    --control-brand-foreground: #dc143c;
+    --control-brand-foreground-new: #dc143c;
+
+    /* Status colors */
+    --status-positive-background: rgba(80, 200, 120, 0.2);
+    --status-positive-text: #50c878;
+    --status-warning-background: rgba(255, 215, 0, 0.2);
+    --status-warning-text: #ffd700;
+    --status-danger-background: rgba(220, 20, 60, 0.2);
+    --status-danger-text: #dc143c;
+    --status-danger: #dc143c;
+    --status-positive: #50c878;
     --status-warning: #ffd700;
-    --status-success: #50c878;
-    --status-info: #5b9bd5;
 
-    /* UI Colors */
-    --line-number: #524850;
-    --active-line-number: #dc143c;
-    --selection-bg: #dc143c40;
-    --search-match-bg: #dc143c40;
-    --background-main: #0e0c0d;
-    --background-editor: #16131a;
-    --background-elevated: #1e1a1c;
-    --background-hover: #2a2426;
-    --background-active: #322a2e;
-    --background-selected: #3a3034;
+    /* Input fields */
+    --input-background: #1e1a1c;
+    --input-placeholder-text: #6a6a6a;
 
-    --text-primary: #e8e8e8;
-    --text-muted: #a0a0a0;
-    --text-gray: #6a6a6a;
-    --text-dim: #4a4a4a;
+    /* Scrollbar */
+    --scrollbar-thin-thumb: rgba(220, 20, 60, 0.4);
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-thumb: rgba(220, 20, 60, 0.4);
+    --scrollbar-auto-track: transparent;
 
-    --accent-primary: #dc143c;
-    --accent-secondary: #c81e38;
+    /* Deprecated but still used */
+    --deprecated-card-bg: #1e1a1c;
+    --deprecated-card-editable-bg: #16131a;
+    --deprecated-store-bg: #0e0c0d;
+    --deprecated-quickswitcher-input-background: #1e1a1c;
+    --deprecated-quickswitcher-input-placeholder: #6a6a6a;
+    --deprecated-text-input-bg: #1e1a1c;
+    --deprecated-text-input-border: #2a2426;
+    --deprecated-text-input-border-hover: #322a2e;
+    --deprecated-text-input-border-disabled: #2a2426;
+    --deprecated-text-input-prefix: #a0a0a0;
+
+    /* Elevation/shadows */
+    --elevation-stroke: rgba(0, 0, 0, 0.3);
+    --elevation-low: 0 1px 0 rgba(0, 0, 0, 0.2), 0 1.5px 0 rgba(0, 0, 0, 0.1);
+    --elevation-medium: 0 4px 4px rgba(0, 0, 0, 0.2);
+    --elevation-high: 0 8px 16px rgba(0, 0, 0, 0.3);
+
+    /* Info colors */
+    --info-positive-background: rgba(80, 200, 120, 0.15);
+    --info-positive-foreground: #50c878;
+    --info-warning-background: rgba(255, 215, 0, 0.15);
+    --info-warning-foreground: #ffd700;
+    --info-danger-background: rgba(220, 20, 60, 0.15);
+    --info-danger-foreground: #dc143c;
+    --info-help-background: rgba(91, 155, 213, 0.15);
+    --info-help-foreground: #5b9bd5;
+
+    /* Button colors */
+    --button-danger-background: #dc143c;
+    --button-danger-background-hover: #ff4466;
+    --button-danger-background-active: #c81e38;
+    --button-positive-background: #50c878;
+    --button-positive-background-hover: #6fdc94;
+    --button-positive-background-active: #2d9d5f;
+    --button-secondary-background: #322a2e;
+    --button-secondary-background-hover: #3a3034;
+    --button-secondary-background-active: #2a2426;
+    --button-outline-danger-text: #dc143c;
+    --button-outline-danger-border: #dc143c;
+    --button-outline-danger-background-hover: rgba(220, 20, 60, 0.2);
+    --button-outline-positive-text: #50c878;
+    --button-outline-positive-border: #50c878;
+    --button-outline-positive-background-hover: rgba(80, 200, 120, 0.2);
+
+    /* Mentions */
+    --mention-foreground: #ff4466;
+    --mention-background: rgba(220, 20, 60, 0.2);
+
+    /* Activity card */
+    --activity-card-background: #1e1a1c;
+
+    /* Profile/User */
+    --profile-body-background-color: #0e0c0d;
+
+    /* Visual Refresh specific variables */
+    --bg-overlay-1: rgba(14, 12, 13, 0.85);
+    --bg-overlay-2: rgba(14, 12, 13, 0.8);
+    --bg-overlay-3: rgba(14, 12, 13, 0.7);
+    --bg-overlay-hover: rgba(42, 36, 38, 0.4);
+    --bg-overlay-active: rgba(50, 42, 46, 0.4);
+    --bg-overlay-selected: rgba(58, 48, 52, 0.4);
+
+    /* Home/Chat/Modal */
+    --home-background: #16131a;
+    --chat-background: #16131a;
+    --modal-background: #16131a;
+    --modal-footer-background: #16131a;
+
+    /* Focus */
+    --focus-primary: #dc143c;
+
+    /* Brand scale */
+    --brand-500: #dc143c;
+    --brand-560: #c81e38;
+    --brand-600: #b01030;
+
+    /* White overrides */
+    --white-500: #e8e8e8;
+
+    /* Black overrides */
+    --black-500: #0e0c0d;
+
+    /* Green scale */
+    --green-360: #50c878;
+
+    /* Red scale */
+    --red-400: #dc143c;
+    --red-430: #c81e38;
 }
 
-.visual-refresh.theme-dark {
-    --background-main: #0e0c0d;
-    --background-editor: #16131a;
-    --background-elevated: #1e1a1c;
-    --background-hover: #2a2426;
-    --background-active: #322a2e;
-    --background-selected: #3a3034;
+/* ===== Additional UI Styling ===== */
 
-    --text-primary: #e8e8e8;
-    --text-muted: #a0a0a0;
-    --text-gray: #6a6a6a;
-    --text-dim: #4a4a4a;
-
-    --accent-primary: #dc143c;
-    --accent-secondary: #c81e38;
+/* Server/Guild list pill and selection */
+.theme-dark [class*="pill-"] {
+    background-color: #dc143c !important;
 }
 
-.visual-refresh.theme-light {
-    --background-main: #fafafa;
-    --background-editor: #f5f5f5;
-    --background-elevated: #f0f0f0;
-    --background-hover: #e8e8e8;
-    --background-active: #e0e0e0;
-    --background-selected: #d8d8d8;
-
-    --text-primary: #1a1a1a;
-    --text-muted: #5a5a5a;
-    --text-gray: #8a8a8a;
-    --text-dim: #b0b0b0;
-
-    --accent-primary: #c81e38;
-    --accent-secondary: #ff4466;
+/* Unread badge */
+.theme-dark [class*="unread-"] {
+    background-color: #dc143c !important;
 }
 
-* {
-    font-family:
-        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
-        Cantarell, "Open Sans", sans-serif;
-    box-sizing: border-box;
+/* Active channel background */
+.theme-dark [class*="containerDefault-"] [class*="link-"]:hover,
+.theme-dark [class*="containerDefault-"] [class*="link-"][class*="selected-"] {
+    background-color: #322a2e !important;
 }
 
-body {
-    background-color: var(--background-main);
-    color: var(--text-primary);
-    transition:
-        background-color 0.3s,
-        color 0.3s;
+/* Code blocks */
+.theme-dark [class*="markup-"] code {
+    background-color: #1e1a1c !important;
+    border-color: #2a2426 !important;
 }
 
-/* Backgrounds */
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(14, 12, 13, 0.2);
-    z-index: -1;
+.theme-dark [class*="markup-"] pre {
+    background-color: #1e1a1c !important;
+    border-color: #2a2426 !important;
 }
 
-.editor {
-    background-color: var(--background-editor);
+/* Code block syntax highlighting */
+.theme-dark .hljs {
+    background: #16131a !important;
+    color: #e8e8e8 !important;
 }
 
-.panel,
-.sidebar {
-    background-color: var(--background-main);
-    border-right: 1px solid var(--background-hover);
+.theme-dark .hljs-keyword {
+    color: #ff4466 !important;
 }
 
-.panel.elevated {
-    background-color: var(--background-elevated);
-    border: 1px solid var(--background-hover);
+.theme-dark .hljs-string {
+    color: #50c878 !important;
 }
 
-/* Text */
-.text-primary {
-    color: var(--text-primary);
+.theme-dark .hljs-number {
+    color: #ff8866 !important;
 }
 
-.text-muted {
-    color: var(--text-muted);
+.theme-dark .hljs-function {
+    color: #5b9bd5 !important;
 }
 
-.text-gray {
-    color: var(--text-gray);
+.theme-dark .hljs-title {
+    color: #5b9bd5 !important;
 }
 
-.text-dim {
-    color: var(--text-dim);
+.theme-dark .hljs-comment {
+    color: #6a6a6a !important;
 }
 
-/* Accents */
-.accent-primary {
-    color: var(--accent-primary);
+.theme-dark .hljs-built_in {
+    color: #ffd700 !important;
 }
 
-.accent-secondary {
-    color: var(--accent-secondary);
+.theme-dark .hljs-class {
+    color: #ffd700 !important;
 }
 
-.button-primary {
-    background-color: var(--accent-primary);
-    border-color: var(--accent-primary);
+.theme-dark .hljs-type {
+    color: #ffd700 !important;
 }
 
-.button-primary:hover {
-    background-color: shade(0.9, var(--accent-primary));
-    border-color: shade(0.9, var(--accent-primary));
+.theme-dark .hljs-attr {
+    color: #ffd700 !important;
 }
 
-.button-secondary {
-    background-color: var(--background-hover);
-    border-color: var(--accent-secondary);
+.theme-dark .hljs-variable {
+    color: #e8e8e8 !important;
 }
 
-.button-secondary:hover {
-    background-color: shade(0.1, var(--accent-secondary));
-    border-color: var(--accent-secondary);
+.theme-dark .hljs-params {
+    color: #ffaacc !important;
 }
 
-/* Syntax Highlighting */
-.hljs {
-    background-color: var(--background-editor);
-    color: var(--text-primary);
+.theme-dark .hljs-literal {
+    color: #ff8866 !important;
 }
 
-.hljs-keyword {
-    color: var(--accent-primary);
+.theme-dark .hljs-symbol {
+    color: #22d3ee !important;
 }
 
-.hljs-string {
-    color: #50c878;
+.theme-dark .hljs-meta {
+    color: #d946ef !important;
 }
 
-.hljs-number {
-    color: #ff8866;
+.theme-dark .hljs-name {
+    color: #ff4466 !important;
 }
 
-.hljs-function {
+.theme-dark .hljs-tag {
+    color: #ff4466 !important;
+}
+
+.theme-dark .hljs-operator {
+    color: #ff4466 !important;
+}
+
+.theme-dark .hljs-punctuation {
+    color: #b0b0b0 !important;
+}
+
+/* User popout/modal backgrounds */
+.theme-dark [class*="userPopout-"],
+.theme-dark [class*="userProfileOuter-"],
+.theme-dark [class*="userProfileInner-"] {
+    background-color: #0e0c0d !important;
+}
+
+/* Settings background */
+.theme-dark [class*="contentRegion-"] {
+    background-color: #16131a !important;
+}
+
+.theme-dark [class*="sidebarRegion-"] {
+    background-color: #0e0c0d !important;
+}
+
+/* Scrollbar styling */
+.theme-dark ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.theme-dark ::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.theme-dark ::-webkit-scrollbar-thumb {
+    background-color: rgba(220, 20, 60, 0.4);
+    border-radius: 4px;
+}
+
+.theme-dark ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(220, 20, 60, 0.6);
+}
+
+/* Selection color */
+.theme-dark ::selection {
+    background-color: rgba(220, 20, 60, 0.4) !important;
+}
+
+/* Focus rings */
+.theme-dark *:focus-visible {
+    outline-color: #dc143c !important;
+}
+
+/* Links */
+.theme-dark a {
     color: #5b9bd5;
 }
 
-/* Interface */
-.input-field {
-    background-color: var(--background-hover);
-    border-color: var(--background-hover);
-    color: var(--text-primary);
+.theme-dark a:hover {
+    color: #ff6688;
 }
 
-.input-field:focus {
-    background-color: var(--background-active);
-    border-color: var(--accent-primary);
+/* Member list hover */
+.theme-dark [class*="member-"]:hover,
+.theme-dark [class*="memberInner-"]:hover {
+    background-color: #2a2426 !important;
 }
 
-.focus-visible:focus {
-    outline: 1px solid var(--accent-primary);
+/* Emoji picker */
+.theme-dark [class*="emojiPicker-"] {
+    background-color: #0e0c0d !important;
 }
 
-/* Navigation */
-.nav-bar {
-    background-color: var(--background-main);
-    border-bottom: 1px solid var(--background-hover);
+.theme-dark [class*="categoryList-"] {
+    background-color: #0e0c0d !important;
 }
 
-.nav-bar button {
-    background-color: transparent;
-    border: none;
-    color: var(--text-primary);
-    font-weight: bold;
+/* Search bar */
+.theme-dark [class*="searchBar-"] {
+    background-color: #1e1a1c !important;
 }
 
-.nav-bar button:hover {
-    color: var(--accent-primary);
-    text-decoration: underline;
+/* Reactions */
+.theme-dark [class*="reaction-"] {
+    background-color: #1e1a1c !important;
 }
 
-/* Chat Messages */
-.message {
-    background-color: transparent;
-    border-left: 3px solid;
-    border-radius: 0;
-    margin: 0.5em;
-    padding: 0.5em;
+.theme-dark [class*="reaction-"]:hover {
+    background-color: #2a2426 !important;
 }
 
-.message-primary {
-    border-left-color: var(--accent-primary);
+.theme-dark [class*="reaction-"][class*="reactionMe-"] {
+    background-color: rgba(220, 20, 60, 0.2) !important;
+    border-color: #dc143c !important;
 }
 
-.message-secondary {
-    border-left-color: var(--accent-secondary);
+/* Message hover */
+.theme-dark [class*="message-"]:hover {
+    background-color: rgba(30, 26, 28, 0.3) !important;
 }
 
-.message-header {
-    font-weight: bold;
-    margin-bottom: 0.5em;
+/* Mentioned message */
+.theme-dark [class*="mentioned-"] {
+    background-color: rgba(255, 215, 0, 0.1) !important;
+    border-left-color: #ffd700 !important;
 }
 
-.message-body {
-    line-height: 1.5;
+/* New messages bar */
+.theme-dark [class*="newMessagesBar-"] {
+    background-color: #dc143c !important;
 }
 
-/* Input Area */
-.input-area {
-    background-color: var(--background-editor);
-    border-top: 1px solid var(--background-hover);
-    margin-top: 1em;
-    padding: 0.5em;
+/* Voice connected */
+.theme-dark [class*="rtcConnectionStatus-"] [class*="pill-"] {
+    background-color: #50c878 !important;
 }
 
-.input-area input {
-    background-color: var(--background-editor);
-    border: 1px solid var(--background-hover);
-    color: var(--text-primary);
-    font-size: 1em;
-    width: 100%;
+/* Live badge */
+.theme-dark [class*="liveBadge-"],
+.theme-dark [class*="live-"] {
+    background-color: #dc143c !important;
 }
 
-/* Guilds */
-.guild-list {
-    list-style-type: none;
-    padding: 0;
+/* Boost badge */
+.theme-dark [class*="premiumIconWrapper-"] svg {
+    color: #ff6688 !important;
 }
 
-.guild-item {
-    display: flex;
-    align-items: center;
-    padding: 0.5em 1em;
-    border-bottom: 1px solid var(--background-hover);
+/* Tab bar active */
+.theme-dark [class*="tabBar-"] [class*="item-"][class*="selected-"] {
+    border-color: #dc143c !important;
+    color: #e8e8e8 !important;
 }
 
-.guild-icon {
-    width: 32px;
-    height: 32px;
-    background-color: var(--background-hover);
-    border-radius: 4px;
-    margin-right: 0.5em;
+/* Folder backgrounds */
+.theme-dark [class*="folderIconWrapper-"] {
+    background-color: #dc143c !important;
 }
 
-.guild-icon.has-boost {
-    background-color: var(--accent-primary);
+/* Notice bars */
+.theme-dark [class*="notice-"]:not([class*="noticeInfo-"]) {
+    background-color: #dc143c !important;
 }
 
-.guild-icon.has-premium {
-    background-color: var(--accent-secondary);
+/* Checkbox/Toggle styling when checked */
+.theme-dark [class*="checkbox-"][class*="checked-"],
+.theme-dark [class*="switchEnabled-"] {
+    background-color: #dc143c !important;
 }
 
-/* Animations */
-@keyframes pulse {
-    0% {
-        opacity: 0.6;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0.6;
-    }
+/* Avatar status ring - streaming */
+.theme-dark [class*="streaming-"] {
+    stroke: #d946ef !important;
 }
 
-.pulse {
-    animation: pulse 2s infinite;
+/* Context menu */
+.theme-dark [class*="menu-"],
+.theme-dark [class*="contextMenu-"] {
+    background-color: #1e1a1c !important;
 }
 
-@keyframes highlight {
-    0% {
-        background-color: var(--accent-primary);
-    }
-    50% {
-        background-color: transparent;
-    }
-    100% {
-        background-color: var(--accent-primary);
-    }
+.theme-dark [class*="menu-"] [class*="item-"]:hover,
+.theme-dark [class*="contextMenu-"] [class*="item-"]:hover {
+    background-color: #322a2e !important;
 }
 
-.highlight {
-    animation: highlight 1s;
+/* Tooltip */
+.theme-dark [class*="tooltip-"] {
+    background-color: #0e0c0d !important;
 }
 
-/* Selectors */
-[contenteditable="true"] {
-    outline: 1px solid var(--accent-primary);
-    background-color: transparent;
+/* Role colors preserve but background is themed */
+.theme-dark [class*="rolesList-"] [class*="role-"] {
+    background-color: #1e1a1c !important;
 }
 
-[contenteditable="true"]:focus {
-    outline: 2px solid var(--accent-primary);
+/* Create invite button */
+.theme-dark [class*="createInvite-"] {
+    background-color: #dc143c !important;
+}
+
+/* Nitro/Premium gradient accents */
+.theme-dark [class*="premiumBanner-"] {
+    background: linear-gradient(135deg, #dc143c, #d946ef) !important;
 }

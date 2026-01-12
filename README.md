@@ -26,10 +26,16 @@
 <details>
 <summary><strong>Discord</strong> (BetterDiscord/Vencord)</summary>
 
-Copy `Themes/Discord/` contents to:
+> Structure inspired by [Catppuccin Discord](https://github.com/catppuccin/discord) theme
+
+**BetterDiscord:**
 - **Windows**: `%USERPROFILE%\AppData\Roaming\BetterDiscord\themes\`
 - **macOS**: `~/Library/Application Support/BetterDiscord/themes/`
 - **Linux**: `~/.config/BetterDiscord/themes/`
+
+**Vencord:**
+- **Windows**: `%USERPROFILE%\AppData\Roaming\Vencord\themes\`
+- **macOS/Linux**: `~/.config/Vencord/themes/`
 
 Then enable in Discord settings → Themes.
 </details>
@@ -63,6 +69,24 @@ spicetify apply
 </details>
 
 <details>
+<summary><strong>VS Code</strong></summary>
+
+**Option 1: Install via Extensions folder**
+
+Copy the `Themes/VSCode/` folder to:
+- **Windows**: `%USERPROFILE%\.vscode\extensions\crimson-theme`
+- **macOS/Linux**: `~/.vscode/extensions/crimson-theme`
+
+Restart VS Code and select "Crimson Dark" or "Crimson Light" from **File → Preferences → Color Theme**.
+
+**Option 2: Install as Extension (VSIX)**
+
+1. In VS Code, press `Ctrl+Shift+P` → "Developer: Install Extension from Location..."
+2. Navigate to `Themes/VSCode/` folder
+3. Select the theme from Color Theme picker
+</details>
+
+<details>
 <summary><strong>Zed</strong></summary>
 
 Copy `Themes/Zed/crimson.json` to:
@@ -71,6 +95,61 @@ Copy `Themes/Zed/crimson.json` to:
 - **Linux**: `~/.config/zed/themes/`
 
 Then select "Crimson Dark" or "Crimson Light" in Zed's theme picker.
+</details>
+
+<details>
+<summary><strong>Windows Terminal</strong></summary>
+
+1. Open Windows Terminal settings (`Ctrl+,`)
+2. Click "Open JSON file" at the bottom left
+3. Add the contents of `Themes/WindowsTerminal/crimson.json` to the `schemes` array
+4. Set `"colorScheme": "Crimson"` in your profile
+</details>
+
+<details>
+<summary><strong>Kitty</strong></summary>
+
+Copy `Themes/Kitty/crimson.conf` to your Kitty config:
+- **Windows**: `%USERPROFILE%\.config\kitty\`
+- **macOS/Linux**: `~/.config/kitty/`
+
+Add to your `kitty.conf`:
+```
+include crimson.conf
+```
+</details>
+
+<details>
+<summary><strong>Obsidian</strong></summary>
+
+Copy the `Themes/Obsidian/` folder to:
+- **Windows**: `%USERPROFILE%\.obsidian\themes\Crimson\`
+- **macOS/Linux**: `~/.obsidian/themes/Crimson/`
+
+Or within your vault: `.obsidian/themes/Crimson/`
+
+Then enable in Settings → Appearance → Themes.
+</details>
+
+<details>
+<summary><strong>Firefox</strong></summary>
+
+1. Navigate to your Firefox profile folder (`about:support` → Profile Folder → Open Folder)
+2. Create a `chrome` folder if it doesn't exist
+3. Copy `Themes/Browsers/Firefox/userChrome.css` and `userContent.css` to the `chrome` folder
+4. In `about:config`, set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`
+5. Restart Firefox
+</details>
+
+<details>
+<summary><strong>OBS Studio</strong></summary>
+
+Copy `Themes/OBSStudio/crimson.qss` to:
+- **Windows**: `%APPDATA%\obs-studio\themes\`
+- **macOS**: `~/Library/Application Support/obs-studio/themes/`
+- **Linux**: `~/.config/obs-studio/themes/`
+
+Restart OBS and select "Crimson" in Settings → General → Theme.
 </details>
 
 ## 📖 Documentation

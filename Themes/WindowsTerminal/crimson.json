@@ -1,0 +1,23 @@
+{
+    "name": "Crimson",
+    "background": "#16131a",
+    "foreground": "#e8e8e8",
+    "cursorColor": "#dc143c",
+    "selectionBackground": "#dc143c40",
+    "black": "#1a1a1a",
+    "brightBlack": "#5a5a5a",
+    "red": "#dc143c",
+    "brightRed": "#ff4466",
+    "green": "#50c878",
+    "brightGreen": "#6fdc94",
+    "yellow": "#ffd700",
+    "brightYellow": "#ffe84d",
+    "blue": "#5b9bd5",
+    "brightBlue": "#7db3e8",
+    "purple": "#d946ef",
+    "brightPurple": "#e879f9",
+    "cyan": "#22d3ee",
+    "brightCyan": "#4de1f5",
+    "white": "#e8e8e8",
+    "brightWhite": "#ffffff"
+}

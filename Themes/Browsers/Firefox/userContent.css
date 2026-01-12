@@ -1,0 +1,116 @@
+/*
+ * Crimson Theme for Firefox (Content)
+ * Themes internal Firefox pages (about:, new tab, etc.)
+ * Colors from Crimson STYLE_GUIDE.md
+ * https://github.com/ProjektCode/Crimson
+ */
+
+/* ===== Root Variables ===== */
+@-moz-document url("about:home"), url("about:newtab"), url("about:privatebrowsing") {
+    :root {
+        --newtab-background-color: #16131a !important;
+        --newtab-background-color-secondary: #1e1a1c !important;
+        --newtab-text-primary-color: #e8e8e8 !important;
+        --newtab-text-secondary-color: #a0a0a0 !important;
+        --newtab-element-hover-color: #2a2426 !important;
+        --newtab-element-active-color: #322a2e !important;
+        --newtab-primary-action-background: #dc143c !important;
+        --newtab-primary-action-background-dimmed: rgba(220, 20, 60, 0.2) !important;
+        --newtab-link-primary-color: #5b9bd5 !important;
+        --newtab-link-secondary-color: #ff6688 !important;
+        --newtab-border-color: #2a2426 !important;
+    }
+
+    body {
+        background-color: #16131a !important;
+    }
+
+    /* Search container */
+    .search-wrapper .search-handoff-button {
+        background-color: #1e1a1c !important;
+        border: 1px solid #2a2426 !important;
+    }
+
+    .search-wrapper .search-handoff-button:hover {
+        border-color: #dc143c !important;
+        box-shadow: 0 0 0 1px #dc143c !important;
+    }
+
+    /* Top sites cards */
+    .top-site-outer .tile {
+        background-color: #1e1a1c !important;
+        border: 1px solid #2a2426 !important;
+    }
+
+    .top-site-outer:hover .tile {
+        background-color: #2a2426 !important;
+    }
+
+    .top-site-outer .title span {
+        color: #e8e8e8 !important;
+    }
+}
+
+/* ===== Preferences / Settings ===== */
+@-moz-document url-prefix("about:preferences") {
+    :root {
+        --in-content-page-background: #16131a !important;
+        --in-content-box-background: #1e1a1c !important;
+        --in-content-text-color: #e8e8e8 !important;
+        --in-content-deemphasized-text: #a0a0a0 !important;
+        --in-content-border-color: #2a2426 !important;
+        --in-content-button-background: #2a2426 !important;
+        --in-content-button-background-hover: #322a2e !important;
+        --in-content-button-background-active: #3a3034 !important;
+        --in-content-primary-button-background: #dc143c !important;
+        --in-content-primary-button-background-hover: #ff4466 !important;
+        --in-content-primary-button-background-active: #c81e38 !important;
+        --in-content-focus-outline-color: #dc143c !important;
+        --in-content-link-color: #5b9bd5 !important;
+        --in-content-link-color-hover: #ff6688 !important;
+    }
+}
+
+/* ===== Addons Page ===== */
+@-moz-document url-prefix("about:addons") {
+    :root {
+        --in-content-page-background: #16131a !important;
+        --in-content-box-background: #1e1a1c !important;
+        --in-content-text-color: #e8e8e8 !important;
+        --in-content-deemphasized-text: #a0a0a0 !important;
+        --in-content-border-color: #2a2426 !important;
+        --in-content-primary-button-background: #dc143c !important;
+        --in-content-primary-button-background-hover: #ff4466 !important;
+        --in-content-link-color: #5b9bd5 !important;
+    }
+}
+
+/* ===== Reader View ===== */
+@-moz-document url-prefix("about:reader") {
+    body.dark {
+        --main-background: #16131a !important;
+        --main-foreground: #e8e8e8 !important;
+        --toolbar-bgcolor: #0e0c0d !important;
+        --active-color: #dc143c !important;
+        --link-foreground: #5b9bd5 !important;
+    }
+}
+
+/* ===== Error Pages ===== */
+@-moz-document url-prefix("about:neterror"), url-prefix("about:certerror") {
+    body {
+        background-color: #16131a !important;
+    }
+
+    .title {
+        color: #e8e8e8 !important;
+    }
+
+    .title-text {
+        color: #dc143c !important;
+    }
+
+    p {
+        color: #a0a0a0 !important;
+    }
+}

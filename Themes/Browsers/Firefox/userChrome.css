@@ -1,0 +1,239 @@
+/*
+ * Crimson Theme for Firefox
+ * Colors from Crimson STYLE_GUIDE.md
+ * https://github.com/ProjektCode/Crimson
+ *
+ * Installation:
+ * 1. Navigate to your Firefox profile folder (about:support → Profile Folder → Open Folder)
+ * 2. Create a 'chrome' folder if it doesn't exist
+ * 3. Copy this file to the 'chrome' folder
+ * 4. Enable in about:config: toolkit.legacyUserProfileCustomizations.stylesheets = true
+ * 5. Restart Firefox
+ */
+
+/* ===== Root Variables ===== */
+:root {
+    /* Background colors */
+    --crimson-obsidian: #0e0c0d;
+    --crimson-midnight: #16131a;
+    --crimson-dark-mauve: #1e1a1c;
+    --crimson-warm-graphite: #2a2426;
+    --crimson-charcoal-plum: #322a2e;
+    --crimson-dark-taupe: #3a3034;
+
+    /* Text colors */
+    --crimson-white: #e8e8e8;
+    --crimson-silver: #a0a0a0;
+    --crimson-gray: #6a6a6a;
+
+    /* Accent colors */
+    --crimson-primary: #dc143c;
+    --crimson-coral: #ff4466;
+    --crimson-salmon: #ff6688;
+
+    /* Secondary colors */
+    --crimson-sky: #5b9bd5;
+    --crimson-emerald: #50c878;
+    --crimson-gold: #ffd700;
+}
+
+/* ===== Main Browser Chrome ===== */
+
+/* Toolbar background */
+#navigator-toolbox {
+    background-color: var(--crimson-obsidian) !important;
+    border-bottom: 1px solid var(--crimson-warm-graphite) !important;
+}
+
+/* URL bar */
+#urlbar-background {
+    background-color: var(--crimson-midnight) !important;
+    border: 1px solid var(--crimson-warm-graphite) !important;
+}
+
+#urlbar:not([focused]) #urlbar-background {
+    background-color: var(--crimson-dark-mauve) !important;
+}
+
+#urlbar[focused] #urlbar-background {
+    border-color: var(--crimson-primary) !important;
+    box-shadow: 0 0 0 1px var(--crimson-primary) !important;
+}
+
+#urlbar-input {
+    color: var(--crimson-white) !important;
+}
+
+/* Tab bar */
+#TabsToolbar {
+    background-color: var(--crimson-obsidian) !important;
+}
+
+/* Individual tabs */
+.tabbrowser-tab {
+    background-color: transparent !important;
+}
+
+.tabbrowser-tab[selected] .tab-background {
+    background-color: var(--crimson-dark-mauve) !important;
+    border-bottom: 2px solid var(--crimson-primary) !important;
+}
+
+.tabbrowser-tab:not([selected]):hover .tab-background {
+    background-color: var(--crimson-warm-graphite) !important;
+}
+
+/* Tab text */
+.tab-text {
+    color: var(--crimson-silver) !important;
+}
+
+.tabbrowser-tab[selected] .tab-text {
+    color: var(--crimson-white) !important;
+}
+
+/* New tab button */
+#tabs-newtab-button,
+#new-tab-button {
+    fill: var(--crimson-silver) !important;
+}
+
+#tabs-newtab-button:hover,
+#new-tab-button:hover {
+    fill: var(--crimson-white) !important;
+    background-color: var(--crimson-warm-graphite) !important;
+}
+
+/* ===== Sidebar ===== */
+
+#sidebar-box {
+    background-color: var(--crimson-obsidian) !important;
+}
+
+#sidebar-header {
+    background-color: var(--crimson-obsidian) !important;
+    border-bottom: 1px solid var(--crimson-warm-graphite) !important;
+}
+
+#sidebar {
+    background-color: var(--crimson-midnight) !important;
+    color: var(--crimson-white) !important;
+}
+
+/* ===== Menus ===== */
+
+menupopup {
+    background-color: var(--crimson-dark-mauve) !important;
+    border: 1px solid var(--crimson-warm-graphite) !important;
+}
+
+menuitem,
+menu {
+    color: var(--crimson-white) !important;
+}
+
+menuitem:hover,
+menu:hover {
+    background-color: var(--crimson-charcoal-plum) !important;
+}
+
+menuseparator {
+    border-color: var(--crimson-warm-graphite) !important;
+}
+
+/* ===== Findbar ===== */
+
+.findbar-container {
+    background-color: var(--crimson-midnight) !important;
+}
+
+.findbar-textbox {
+    background-color: var(--crimson-dark-mauve) !important;
+    color: var(--crimson-white) !important;
+    border: 1px solid var(--crimson-warm-graphite) !important;
+}
+
+.findbar-textbox:focus {
+    border-color: var(--crimson-primary) !important;
+}
+
+/* ===== Scrollbars ===== */
+
+* {
+    scrollbar-color: rgba(220, 20, 60, 0.4) transparent !important;
+    scrollbar-width: thin !important;
+}
+
+/* ===== Selection ===== */
+
+::selection {
+    background-color: rgba(220, 20, 60, 0.4) !important;
+    color: var(--crimson-white) !important;
+}
+
+/* ===== Buttons ===== */
+
+.toolbarbutton-1 {
+    fill: var(--crimson-silver) !important;
+}
+
+.toolbarbutton-1:hover {
+    fill: var(--crimson-white) !important;
+    background-color: var(--crimson-warm-graphite) !important;
+}
+
+/* Back/Forward buttons */
+#back-button,
+#forward-button {
+    fill: var(--crimson-silver) !important;
+}
+
+#back-button:hover,
+#forward-button:hover {
+    fill: var(--crimson-white) !important;
+}
+
+/* Reload button */
+#reload-button {
+    fill: var(--crimson-silver) !important;
+}
+
+#reload-button:hover {
+    fill: var(--crimson-emerald) !important;
+}
+
+/* ===== Bookmarks Toolbar ===== */
+
+#PersonalToolbar {
+    background-color: var(--crimson-obsidian) !important;
+    border-bottom: 1px solid var(--crimson-warm-graphite) !important;
+}
+
+.bookmark-item {
+    color: var(--crimson-silver) !important;
+}
+
+.bookmark-item:hover {
+    background-color: var(--crimson-warm-graphite) !important;
+    color: var(--crimson-white) !important;
+}
+
+/* ===== Downloads Panel ===== */
+
+#downloadsPanel {
+    background-color: var(--crimson-dark-mauve) !important;
+}
+
+.downloadProgress {
+    background-color: var(--crimson-warm-graphite) !important;
+}
+
+.downloadProgress>.progress-bar {
+    background-color: var(--crimson-primary) !important;
+}
+
+/* ===== Focus Rings ===== */
+
+*:focus-visible {
+    outline-color: var(--crimson-primary) !important;
+}

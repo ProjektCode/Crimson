@@ -1,0 +1,39 @@
+{
+    "name": "crimson-theme",
+    "displayName": "Crimson Theme",
+    "description": "A modern, elegant color theme with deep obsidian backgrounds and vibrant crimson accents",
+    "version": "1.0.0",
+    "publisher": "crimson",
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "keywords": [
+        "theme",
+        "color-theme",
+        "crimson",
+        "dark",
+        "light"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Crimson Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/crimson-dark-color-theme.json"
+            },
+            {
+                "label": "Crimson Light",
+                "uiTheme": "vs",
+                "path": "./themes/crimson-light-color-theme.json"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/yourusername/crimson"
+    },
+    "license": "MIT"
+}

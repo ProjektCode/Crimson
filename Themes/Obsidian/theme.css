@@ -1,0 +1,179 @@
+/* Crimson Theme for Obsidian */
+/* Colors from STYLE_GUIDE.md */
+
+.theme-dark {
+    /* Background colors - Obsidian/Midnight palette */
+    --background-primary: #16131a;
+    --background-primary-alt: #1e1a1c;
+    --background-secondary: #0e0c0d;
+    --background-secondary-alt: #1e1a1c;
+    --background-modifier-border: #2a2426;
+    --background-modifier-form-field: #1e1a1c;
+    --background-modifier-form-field-highlighted: #2a2426;
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+    --background-modifier-success: #50c87820;
+    --background-modifier-error: #dc143c20;
+    --background-modifier-error-rgb: 220, 20, 60;
+    --background-modifier-cover: rgba(14, 12, 13, 0.8);
+
+    /* Text colors */
+    --text-normal: #e8e8e8;
+    --text-muted: #a0a0a0;
+    --text-faint: #6a6a6a;
+    --text-on-accent: #ffffff;
+    --text-error: #dc143c;
+    --text-error-hover: #ff4466;
+    --text-success: #50c878;
+    --text-selection: rgba(220, 20, 60, 0.3);
+    --text-highlight-bg: rgba(255, 215, 0, 0.3);
+    --text-highlight-bg-active: rgba(255, 215, 0, 0.5);
+    --text-accent: #dc143c;
+    --text-accent-hover: #ff4466;
+
+    /* Interactive elements */
+    --interactive-normal: #a0a0a0;
+    --interactive-hover: #e8e8e8;
+    --interactive-accent: #dc143c;
+    --interactive-accent-hover: #ff4466;
+    --interactive-accent-rgb: 220, 20, 60;
+
+    /* Scrollbar */
+    --scrollbar-active-thumb-bg: rgba(220, 20, 60, 0.5);
+    --scrollbar-bg: rgba(14, 12, 13, 0.2);
+    --scrollbar-thumb-bg: rgba(220, 20, 60, 0.3);
+
+    /* Headings */
+    --h1-color: #ff4466;
+    --h2-color: #ff6688;
+    --h3-color: #ff8866;
+    --h4-color: #ffd700;
+    --h5-color: #5b9bd5;
+    --h6-color: #22d3ee;
+
+    /* Links */
+    --link-color: #5b9bd5;
+    --link-color-hover: #7db3e8;
+    --link-external-color: #22d3ee;
+    --link-external-color-hover: #4de1f5;
+    --link-unresolved-color: #d946ef;
+    --link-unresolved-opacity: 0.8;
+
+    /* Tags */
+    --tag-color: #dc143c;
+    --tag-color-hover: #ff4466;
+    --tag-background: rgba(220, 20, 60, 0.15);
+    --tag-background-hover: rgba(220, 20, 60, 0.25);
+
+    /* Checkbox */
+    --checkbox-color: #dc143c;
+    --checkbox-color-hover: #ff4466;
+    --checkbox-border-color: #524850;
+    --checkbox-marker-color: #0e0c0d;
+
+    /* Code */
+    --code-normal: #50c878;
+    --code-background: #1e1a1c;
+    --code-comment: #6a6a6a;
+    --code-function: #5b9bd5;
+    --code-important: #dc143c;
+    --code-keyword: #ff4466;
+    --code-property: #a8d5ff;
+    --code-punctuation: #b0b0b0;
+    --code-string: #50c878;
+    --code-tag: #ff4466;
+    --code-value: #ff8866;
+
+    /* Blockquotes */
+    --blockquote-border-color: #dc143c;
+
+    /* Tables */
+    --table-header-background: #1e1a1c;
+    --table-header-background-hover: #2a2426;
+    --table-row-even-background: #16131a;
+    --table-row-odd-background: #1e1a1c;
+    --table-border-color: #2a2426;
+
+    /* Graphs */
+    --graph-line: #2a2426;
+    --graph-node: #dc143c;
+    --graph-node-focused: #ff4466;
+    --graph-node-tag: #ffd700;
+    --graph-node-attachment: #50c878;
+    --graph-node-unresolved: #d946ef;
+
+    /* Icons */
+    --icon-color: #a0a0a0;
+    --icon-color-hover: #e8e8e8;
+    --icon-color-focused: #dc143c;
+
+    /* Nav */
+    --nav-item-color: #a0a0a0;
+    --nav-item-color-hover: #e8e8e8;
+    --nav-item-color-active: #dc143c;
+    --nav-item-background-hover: #2a2426;
+    --nav-item-background-active: #322a2e;
+
+    /* Ribbon */
+    --ribbon-background: #0e0c0d;
+    --ribbon-background-collapsed: #0e0c0d;
+
+    /* Titlebar */
+    --titlebar-background: #0e0c0d;
+    --titlebar-background-focused: #0e0c0d;
+    --titlebar-text-color: #e8e8e8;
+    --titlebar-text-color-focused: #e8e8e8;
+}
+
+/* Accent color button styling */
+.theme-dark .mod-cta {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+}
+
+.theme-dark .mod-cta:hover {
+    background-color: var(--interactive-accent-hover);
+}
+
+/* Tab styling */
+.theme-dark .workspace-tab-header.is-active {
+    background-color: var(--background-primary);
+    border-bottom: 2px solid var(--interactive-accent);
+}
+
+/* Status bar */
+.theme-dark .status-bar {
+    background-color: var(--background-secondary);
+    border-top: 1px solid var(--background-modifier-border);
+}
+
+/* Callouts */
+.theme-dark .callout[data-callout="note"] {
+    --callout-color: 91, 155, 213;
+}
+
+.theme-dark .callout[data-callout="tip"] {
+    --callout-color: 80, 200, 120;
+}
+
+.theme-dark .callout[data-callout="warning"] {
+    --callout-color: 255, 215, 0;
+}
+
+.theme-dark .callout[data-callout="danger"],
+.theme-dark .callout[data-callout="error"] {
+    --callout-color: 220, 20, 60;
+}
+
+.theme-dark .callout[data-callout="important"] {
+    --callout-color: 217, 70, 239;
+}
+
+/* Selection */
+.theme-dark ::selection {
+    background-color: rgba(220, 20, 60, 0.4);
+}
+
+/* Focus styling */
+.theme-dark *:focus-visible {
+    box-shadow: 0 0 0 2px var(--interactive-accent);
+}
