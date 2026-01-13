@@ -26,13 +26,14 @@ If you’ve never installed a theme before, start with **Quick Start** below.
 - Discord (BetterDiscord/Vencord): `Themes/Discord/crimson.theme.css`
 - VS Code / Cursor / other VS Code-based editors: `Themes/VSCode/crimson-theme-1.0.0.vsix`
 - Zed: `Themes/Zed/crimson.json`
-- Windows Terminal: `Themes/WindowsTerminal/crimson.json`
+- Windows Terminal: `Themes/WindowsTerminal/crimson.json` (Windows only)
 - Kitty: `Themes/Kitty/crimson.conf`
 - Obsidian: copy the folder `Themes/Obsidian/` (contains `manifest.json` + `theme.css`)
 - Firefox: `Themes/Browsers/Firefox/userChrome.css` + `Themes/Browsers/Firefox/userContent.css`
 - OBS Studio: `Themes/OBSStudio/crimson.obt` + `Themes/OBSStudio/crimson_*.ovt`
 - Spicetify (Spotify): `Themes/Spicetify/color.ini` + `Themes/Spicetify/user.css` (requires Spicetify)
 - OpenCode: `Themes/Opencode/crimson.json`
+- Oh My Posh: `Themes/OhMyPosh/crimson.omp.json`
 
 ---
 
@@ -63,7 +64,8 @@ If you’ve never installed a theme before, start with **Quick Start** below.
 
 **Vencord:**
 - **Windows**: `%USERPROFILE%\\AppData\\Roaming\\Vencord\\themes\\`
-- **macOS/Linux**: `~/.config/Vencord/themes/`
+- **macOS**: `~/Library/Application Support/Vencord/themes/`
+- **Linux**: `~/.config/Vencord/themes/`
 
 ### If it doesn’t show up
 - Make sure the file ends with `.theme.css`
@@ -108,7 +110,7 @@ If you’ve never installed a theme before, start with **Quick Start** below.
 </details>
 
 <details>
-<summary><strong>Windows Terminal</strong></summary>
+<summary><strong>Windows Terminal</strong> (Windows only)</summary>
 
 ### File to copy
 - `Themes/WindowsTerminal/crimson.json`
@@ -119,17 +121,18 @@ If you’ve never installed a theme before, start with **Quick Start** below.
 3. Find the `"schemes"` array and add the contents of `Themes/WindowsTerminal/crimson.json`
 4. In your profile, set `"colorScheme": "Crimson"`
 
+**Note**: Windows Terminal is Windows-only. On macOS/Linux, use a terminal like Kitty (see the Kitty section) and/or Oh My Posh.
+
 </details>
 
 <details>
-<summary><strong>Kitty</strong></summary>
+<summary><strong>Kitty</strong> (macOS / Linux)</summary>
 
 ### File to copy
 - `Themes/Kitty/crimson.conf`
 
 ### Install
 1. Copy `crimson.conf` into your Kitty config folder:
-   - **Windows**: `%USERPROFILE%\\.config\\kitty\\`
    - **macOS/Linux**: `~/.config/kitty/`
 2. Edit your `kitty.conf` and add:
    ```
@@ -243,12 +246,71 @@ spicetify apply
 
 </details>
 
+<details>
+<summary><strong>Oh My Posh</strong> (PowerShell / Windows Terminal prompt)</summary>
+
+> Based on the built-in Oh My Posh `tokyo` theme by Jan De Dobbeleer (original structure), recolored to match the Crimson palette.
+
+### File to copy
+- `Themes/OhMyPosh/crimson.omp.json`
+
+### Install (PowerShell on Windows)
+1. Copy `crimson.omp.json` somewhere permanent (example):
+   - `C:\\Users\\<you>\\.config\\oh-my-posh\\crimson.omp.json`
+2. Open your PowerShell profile file:
+   - Run: `$PROFILE` (it prints the path)
+   - Create it if missing: `New-Item -ItemType File -Force -Path $PROFILE`
+3. Add (or update) the init line to point at Crimson:
+   ```powershell
+   oh-my-posh init pwsh --config 'C:\\Users\\<you>\\.config\\oh-my-posh\\crimson.omp.json' | Invoke-Expression
+   ```
+4. Reload your profile:
+   - `. $PROFILE`
+
+### Install (Linux / macOS)
+Oh My Posh is supported on Linux and macOS. The steps are the same: copy the theme file, then add an init line to your shell config.
+
+1. Copy `crimson.omp.json` to:
+   - `~/.config/oh-my-posh/crimson.omp.json`
+2. Add ONE of the following to your shell config file:
+
+**bash** (`~/.bashrc` or `~/.profile`):
+```bash
+eval "$(oh-my-posh init bash --config ~/.config/oh-my-posh/crimson.omp.json)"
+```
+
+**zsh** (`~/.zshrc`) (default on macOS):
+```zsh
+eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/crimson.omp.json)"
+```
+
+**fish** (`~/.config/fish/config.fish`):
+```fish
+oh-my-posh init fish --config ~/.config/oh-my-posh/crimson.omp.json | source
+```
+
+3. Restart your terminal (or reload your shell config)
+
+### Install (CMD.exe via Clink) (Windows only)
+Windows Command Prompt (`cmd.exe`) needs **Clink** for Oh My Posh support.
+
+1. Install Clink and enable **autostart** during install
+2. Open `cmd.exe`, then run:
+   - `clink config prompt use oh-my-posh`
+   - `clink set ohmyposh.theme C:\\Users\\<you>\\.config\\oh-my-posh\\crimson.omp.json`
+3. Close all `cmd.exe` windows and open a new one
+
+**If `clink` isn’t found in cmd**: Clink isn’t installed or autostart isn’t enabled.
+
+</details>
+
 ---
 
 ## Troubleshooting (common beginner issues)
 
 - **I can’t find AppData / .config / .obsidian**: those folders can be hidden by default. Enable “Show hidden files” in your file explorer.
 - **What is `%USERPROFILE%` / `%APPDATA%`?**: on Windows, these are shortcuts to your user folders. You can paste them directly into File Explorer’s address bar.
+- **What is `~` (the tilde)?**: on macOS and Linux, this is a shortcut for your home folder (for example, `/Users/<you>` on macOS). In Finder you can use **Go** → **Go to Folder…** and enter a path starting with `~/`.
 - **I copied the file but nothing changed**: make sure you also enabled/selected the theme inside the app (most apps don’t auto-enable).
 
 ## Documentation

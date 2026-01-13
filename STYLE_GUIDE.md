@@ -293,6 +293,5 @@ The Discord theme structure is inspired by [Catppuccin](https://github.com/catpp
 ---
 
 <div align="center">
-  <p><em>Crafted with 💎 for developers who demand both beauty and functionality.</em></p>
   <p><strong>Version 4.0 — Unified Color Edition</strong></p>
 </div>
