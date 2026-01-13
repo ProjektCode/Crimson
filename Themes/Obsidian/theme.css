@@ -177,3 +177,185 @@
 .theme-dark *:focus-visible {
     box-shadow: 0 0 0 2px var(--interactive-accent);
 }
+
+.theme-light {
+    color-scheme: light;
+    --accent-h: 351;
+    --accent-s: 74%;
+    --accent-l: 45%;
+
+    /* Background colors - Snow/Ivory palette */
+    --background-primary: #f5f5f5;
+    --background-primary-alt: #f0f0f0;
+    --background-secondary: #fafafa;
+    --background-secondary-alt: #f0f0f0;
+    --background-modifier-border: #e8e8e8;
+    --background-modifier-form-field: #f0f0f0;
+    --background-modifier-form-field-highlighted: #e8e8e8;
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+    --background-modifier-success: #2d9d5f20;
+    --background-modifier-error: #c81e3820;
+    --background-modifier-error-rgb: 200, 30, 56;
+    --background-modifier-cover: rgba(250, 250, 250, 0.8);
+
+    /* Text colors */
+    --text-normal: #1a1a1a;
+    --text-muted: #5a5a5a;
+    --text-faint: #8a8a8a;
+    --text-on-accent: #ffffff;
+    --text-error: #c81e38;
+    --text-error-hover: #e02850;
+    --text-success: #2d9d5f;
+    --text-selection: rgba(200, 30, 56, 0.2);
+    --text-highlight-bg: rgba(200, 151, 0, 0.2);
+    --text-highlight-bg-active: rgba(200, 151, 0, 0.4);
+    --text-accent: #c81e38;
+    --text-accent-hover: #e02850;
+
+    /* Interactive elements */
+    --interactive-normal: #5a5a5a;
+    --interactive-hover: #1a1a1a;
+    --interactive-accent: #c81e38;
+    --interactive-accent-hover: #e02850;
+    --interactive-accent-rgb: 200, 30, 56;
+
+    /* Scrollbar */
+    --scrollbar-active-thumb-bg: rgba(200, 30, 56, 0.5);
+    --scrollbar-bg: rgba(0, 0, 0, 0.05);
+    --scrollbar-thumb-bg: rgba(200, 30, 56, 0.3);
+
+    /* Headings */
+    --h1-color: #c81e38;
+    --h2-color: #e02850;
+    --h3-color: #d97000;
+    --h4-color: #c89700;
+    --h5-color: #2a6fad;
+    --h6-color: #0d9fb8;
+
+    /* Links */
+    --link-color: #2a6fad;
+    --link-color-hover: #e02850;
+    --link-external-color: #0d9fb8;
+    --link-external-color-hover: #0bb2ce;
+    --link-unresolved-color: #b028d0;
+    --link-unresolved-opacity: 0.8;
+
+    /* Tags */
+    --tag-color: #c81e38;
+    --tag-color-hover: #e02850;
+    --tag-background: rgba(200, 30, 56, 0.1);
+    --tag-background-hover: rgba(200, 30, 56, 0.2);
+
+    /* Checkbox */
+    --checkbox-color: #c81e38;
+    --checkbox-color-hover: #e02850;
+    --checkbox-border-color: #a0a0a0;
+    --checkbox-marker-color: #fafafa;
+
+    /* Code */
+    --code-normal: #2d9d5f;
+    --code-background: #f0f0f0;
+    --code-comment: #8a8a8a;
+    --code-function: #2a6fad;
+    --code-important: #c81e38;
+    --code-keyword: #c81e38;
+    --code-property: #3584c7;
+    --code-punctuation: #5a5a5a;
+    --code-string: #2d9d5f;
+    --code-tag: #c81e38;
+    --code-value: #d97000;
+
+    /* Blockquotes */
+    --blockquote-border-color: #c81e38;
+
+    /* Tables */
+    --table-header-background: #f0f0f0;
+    --table-header-background-hover: #e8e8e8;
+    --table-row-even-background: #f5f5f5;
+    --table-row-odd-background: #f0f0f0;
+    --table-border-color: #e8e8e8;
+
+    /* Graphs */
+    --graph-line: #e8e8e8;
+    --graph-node: #c81e38;
+    --graph-node-focused: #e02850;
+    --graph-node-tag: #c89700;
+    --graph-node-attachment: #2d9d5f;
+    --graph-node-unresolved: #b028d0;
+
+    /* Icons */
+    --icon-color: #8a8a8a;
+    --icon-color-hover: #1a1a1a;
+    --icon-color-focused: #c81e38;
+
+    /* Nav */
+    --nav-item-color: #5a5a5a;
+    --nav-item-color-hover: #1a1a1a;
+    --nav-item-color-active: #c81e38;
+    --nav-item-background-hover: #e8e8e8;
+    --nav-item-background-active: #e0e0e0;
+
+    /* Ribbon */
+    --ribbon-background: #fafafa;
+    --ribbon-background-collapsed: #fafafa;
+
+    /* Titlebar */
+    --titlebar-background: #fafafa;
+    --titlebar-background-focused: #fafafa;
+    --titlebar-text-color: #1a1a1a;
+    --titlebar-text-color-focused: #1a1a1a;
+}
+
+/* Accent color button styling */
+.theme-light .mod-cta {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+}
+
+.theme-light .mod-cta:hover {
+    background-color: var(--interactive-accent-hover);
+}
+
+/* Tab styling */
+.theme-light .workspace-tab-header.is-active {
+    background-color: var(--background-primary);
+    border-bottom: 2px solid var(--interactive-accent);
+}
+
+/* Status bar */
+.theme-light .status-bar {
+    background-color: var(--background-secondary);
+    border-top: 1px solid var(--background-modifier-border);
+}
+
+/* Callouts */
+.theme-light .callout[data-callout="note"] {
+    --callout-color: 42, 111, 173;
+}
+
+.theme-light .callout[data-callout="tip"] {
+    --callout-color: 45, 157, 95;
+}
+
+.theme-light .callout[data-callout="warning"] {
+    --callout-color: 200, 151, 0;
+}
+
+.theme-light .callout[data-callout="danger"],
+.theme-light .callout[data-callout="error"] {
+    --callout-color: 200, 30, 56;
+}
+
+.theme-light .callout[data-callout="important"] {
+    --callout-color: 176, 40, 208;
+}
+
+/* Selection */
+.theme-light ::selection {
+    background-color: rgba(200, 30, 56, 0.2);
+}
+
+/* Focus styling */
+.theme-light *:focus-visible {
+    box-shadow: 0 0 0 2px var(--interactive-accent);
+}

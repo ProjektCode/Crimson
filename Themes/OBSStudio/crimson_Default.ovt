@@ -1,0 +1,7 @@
+@OBSThemeMeta {
+    name: 'Default';
+    id: 'com.projektcode.Crimson.Original';
+    extends: 'com.projektcode.Crimson';
+    author: 'ProjektCode';
+    dark: 'true';
+}

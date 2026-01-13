@@ -32,7 +32,7 @@
     /* Text colors */
     --text-normal: #e8e8e8;
     --text-muted: #a0a0a0;
-    --text-link: #5b9bd5;
+    --text-link: #ff6688;
     --text-positive: #50c878;
     --text-warning: #ffd700;
     --text-danger: #dc143c;
@@ -326,7 +326,7 @@
 
 /* Links */
 .theme-dark a {
-    color: #5b9bd5;
+    color: #ff6688;
 }
 
 .theme-dark a:hover {

@@ -1,0 +1,38 @@
+@OBSThemeMeta {
+    name: 'Dark';
+    id: 'com.projektcode.Crimson.Dark';
+    extends: 'com.projektcode.Crimson';
+    author: 'ProjektCode';
+    dark: 'true';
+}
+
+@OBSThemeVars {
+    /* Crimson Dark overrides (STYLE_GUIDE.md) */
+    --grey8: #0e0c0d; /* Obsidian */
+    --grey7: #16131a; /* Midnight */
+    --grey6: #1e1a1c; /* Dark Mauve */
+    --grey5: #2a2426; /* Warm Graphite */
+    --grey4: #322a2e; /* Charcoal Plum */
+    --grey3: #3a3034; /* Dark Taupe */
+
+    --white1: #e8e8e8; /* White */
+    --white2: #d6d6d6;
+    --white3: #c2c2c2;
+    --white4: #adadad;
+    --white5: #a0a0a0; /* Silver */
+
+    /* Primary accents (map Yami's blue/primary to Crimson) */
+    --blue1: #ff6688; /* Salmon */
+    --blue2: #ff4466; /* Coral Red */
+    --blue3: #dc143c; /* Crimson */
+    --blue4: #c81e38; /* Ruby */
+    --blue5: #a1172e;
+
+    --danger: #dc143c;
+    --warning: #ffd700;
+
+    /* Functional colors */
+    --green3: #50c878; /* Emerald */
+    --teal2: #5b9bd5;  /* Sky */
+    --teal3: #22d3ee;  /* Cyan */
+}

@@ -69,21 +69,32 @@ spicetify apply
 </details>
 
 <details>
-<summary><strong>VS Code</strong></summary>
+<summary><strong>VS Code (and VS Code-based editors)</strong></summary>
 
-**Option 1: Install via Extensions folder**
+Crimson ships as a `.vsix` extension for maximum compatibility.
 
-Copy the `Themes/VSCode/` folder to:
-- **Windows**: `%USERPROFILE%\.vscode\extensions\crimson-theme`
-- **macOS/Linux**: `~/.vscode/extensions/crimson-theme`
+**Install (recommended: works for VS Code, Cursor, Antigravity, Windsurf, etc.)**
 
-Restart VS Code and select "Crimson Dark" or "Crimson Light" from **File → Preferences → Color Theme**.
+1. In your editor, press `Ctrl+Shift+P` → **"Extensions: Install from VSIX..."**
+2. Select: `Themes/VSCode/crimson-theme-1.0.0.vsix`
+3. Restart the editor, then select **"Crimson Dark"** or **"Crimson Light"** from the Color Theme picker.
 
-**Option 2: Install as Extension (VSIX)**
+**Install via CLI (universal pattern)**
 
-1. In VS Code, press `Ctrl+Shift+P` → "Developer: Install Extension from Location..."
-2. Navigate to `Themes/VSCode/` folder
-3. Select the theme from Color Theme picker
+Most VS Code-based editors expose a CLI with the same flag:
+
+- VS Code: `code --install-extension Themes/VSCode/crimson-theme-1.0.0.vsix --force`
+- Antigravity: `antigravity --install-extension Themes/VSCode/crimson-theme-1.0.0.vsix --force`
+- Cursor / Windsurf / others: run `<editor-cli> --help` and look for `--install-extension`, then use:
+  `<editor-cli> --install-extension Themes/VSCode/crimson-theme-1.0.0.vsix --force`
+
+**Set as default (optional)**
+
+In your editor `settings.json`:
+
+- `"workbench.colorTheme": "Crimson Dark"`
+
+> Note: Double-click install depends on Windows file associations and is not consistent across forks. The Command Palette method above is the most reliable.
 </details>
 
 <details>
@@ -144,12 +155,12 @@ Then enable in Settings → Appearance → Themes.
 <details>
 <summary><strong>OBS Studio</strong></summary>
 
-Copy `Themes/OBSStudio/crimson.qss` to:
+Copy `Themes/OBSStudio/crimson.obt`, `Themes/OBSStudio/crimson_Default.ovt`, `Themes/OBSStudio/crimson_Dark.ovt`, and `Themes/OBSStudio/crimson_Light.ovt` to:
 - **Windows**: `%APPDATA%\obs-studio\themes\`
 - **macOS**: `~/Library/Application Support/obs-studio/themes/`
 - **Linux**: `~/.config/obs-studio/themes/`
 
-Restart OBS and select "Crimson" in Settings → General → Theme.
+Restart OBS and select "Crimson" in Settings → Appearance → Theme, then choose "Default", "Dark", or "Light" in Settings → Appearance → Style.
 </details>
 
 ## 📖 Documentation
