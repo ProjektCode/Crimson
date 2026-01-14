@@ -1,0 +1,37 @@
+# Crimson palette for Starship
+#
+# Usage:
+# - Merge this file into your Starship config (usually ~/.config/starship.toml)
+# - Ensure `palette = "crimson"` is set in your config
+
+palette = "crimson"
+
+[palettes.crimson]
+# Core
+background = "#0e0c0d"  # Obsidian
+foreground = "#e8e8e8"  # White
+
+# ANSI (matches STYLE_GUIDE.md -> Terminal Colors)
+black = "#1a1a1a"
+bright_black = "#5a5a5a"
+red = "#dc143c"
+bright_red = "#ff4466"
+green = "#50c878"
+bright_green = "#6fdc94"
+yellow = "#ffd700"
+bright_yellow = "#ffe84d"
+blue = "#5b9bd5"
+bright_blue = "#7db3e8"
+purple = "#d946ef"
+bright_purple = "#e879f9"
+cyan = "#22d3ee"
+bright_cyan = "#4de1f5"
+white = "#e8e8e8"
+bright_white = "#ffffff"
+
+# Extra semantic aliases (optional)
+crimson = "#dc143c"
+ruby = "#c81e38"
+salmon = "#ff6688"
+peach = "#ff8866"
+gold = "#ffd700"

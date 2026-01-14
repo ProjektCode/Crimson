@@ -34,6 +34,7 @@ If you’ve never installed a theme before, start with **Quick Start** below.
 - Spicetify (Spotify): `Themes/Spicetify/color.ini` + `Themes/Spicetify/user.css` (requires Spicetify)
 - OpenCode: `Themes/Opencode/crimson.json`
 - Oh My Posh: `Themes/OhMyPosh/crimson.omp.json`
+- Starship: `Themes/Starship/crimson.toml`
 
 ---
 
@@ -301,6 +302,23 @@ Windows Command Prompt (`cmd.exe`) needs **Clink** for Oh My Posh support.
 3. Close all `cmd.exe` windows and open a new one
 
 **If `clink` isn’t found in cmd**: Clink isn’t installed or autostart isn’t enabled.
+
+</details>
+
+<details>
+<summary><strong>Starship</strong> (cross-platform prompt)</summary>
+
+### File to use
+- `Themes/Starship/crimson.toml`
+
+### Install
+1. Find your Starship config file:
+   - **macOS/Linux**: `~/.config/starship.toml`
+   - **Windows**: `%USERPROFILE%\\.config\\starship.toml`
+2. Copy the contents of `Themes/Starship/crimson.toml` into your Starship config.
+3. Make sure your Starship config contains:
+   - `palette = "crimson"`
+4. Restart your shell.
 
 </details>
 
